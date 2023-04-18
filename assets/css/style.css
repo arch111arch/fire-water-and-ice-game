@@ -43,6 +43,24 @@ height: 75px;
     padding-right: 20%;
 }
 
+.boardItem {
+    background-color: rgb(245, 4, 4);
+    display: inline-block;
+    color: rgb(248, 249, 250);
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+
+}
+
+#enemyPortrait {
+    background-color: rgb(173, 57, 164);
+}
+
+#heroPortrait {
+    background-color: rgb(24, 245, 4);
+}
+
 
 .about {
     background-color: dimgray;

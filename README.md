@@ -6,8 +6,6 @@ The goal of the site is to be stylised, easy to use and be responsive.
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
 - __Navigation Bar__
@@ -15,7 +13,6 @@ In this section, you should go over the different parts of your project, and des
   - The navigaition is simple and to the point. It is resposive and easy for the user to understand.
   - Because this is such a small page, it has no need for a HOME-button.. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
 
 - __The Game Board__
 

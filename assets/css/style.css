@@ -31,15 +31,6 @@ height: 75px;
 padding-top: 5px;
 }
 
-#vs {
-    display: inline-block;
-    padding-top: 200px;
-    margin-left: 5px;
-    margin-right: 5px;
-    vertical-align: top;
-
-}
-
 .nav li {
     display: inline-block;
     color: aliceblue;
@@ -57,13 +48,237 @@ padding-top: 5px;
     text-align: center;
     color: rgb(248, 249, 250);
     width: 100%;
-    height: 825px;
+
 }
 
 a {
    text-decoration: none; 
    color: aliceblue;
 }
+
+
+.box {
+  
+    position: relative;
+    width: 350px;
+      height: 520px;
+      display: inline-block;
+      border-radius: 10px;
+      
+    }
+    
+    #playerCard {
+        background-color: rgb(24, 245, 4);
+        background-image: url(/assets/images/playerportrait.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(57, 247, 9);
+    }
+    
+    #computerCard {
+        background-color: rgb(226, 13, 24);
+        background-image: url(/assets/images/computerportrait.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(247, 9, 9);
+    }
+    
+    #playerChoiceDisplay {
+      /* background-color: green; */
+      position: absolute;
+      top: 80%;
+      right: 250px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+      /* border: 2px; */
+      border-style: solid;
+      border-color: greenyellow;
+      
+      
+    }
+    
+    p {
+      font-size: small;
+    }
+    
+    #computerChoiceDisplay {
+      /* background-color: red; */
+      position: absolute;
+      top: 80%;
+      left: 250px;
+      width: 75px;
+      height: 25px;
+      display: inline-block;
+      /* border: 2px; */
+      border-style: solid;
+      border-color: darkred;
+     
+    }
+    
+    
+    #cardContainer {
+     
+      position: relative;
+      display: inline-block;
+      
+    }
+    #vs {
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      
+      border-radius: 0;
+      text-align: center;
+      vertical-align: text-bottom;
+     padding-bottom: 300px;
+     padding-left: 2px;
+     padding-right: 16px;
+      }
+    
+    #cardArea {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .button {
+        background-color: lightblue;
+        height: 50px;
+        border-radius: 20px;
+        padding-top: 10pxp;
+        padding-bottom: 2px;
+        text-align: center;
+        width: fit-content;
+        }
+
+        #rock{
+          background-color: transparent;
+          background-image: url(/assets/images/rock_select.png);
+           background-size: 100px 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-left: 10px;
+        background-repeat: no-repeat;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100px;
+        height: 100px;
+         
+        }
+      
+        #paper{
+          background-color: transparent;
+          background-image: url(/assets/images/paper_select.png);
+           background-size: 100px 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-left: 10px;
+        background-repeat: no-repeat;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100px;
+        height: 100px;
+         
+        }
+
+        #scissors{
+          background-color: transparent;
+          background-image: url(/assets/images/scissors_select.png);
+           background-size: 100px 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-left: 10px;
+        background-repeat: no-repeat;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100px;
+        height: 100px;
+         
+        }
+        
+        #choiceButtons {
+          text-align: center;
+          width: 100%;
+         
+        }
+        
+        #scoreSection{
+          margin-top: 20px;
+          text-align: center;
+          width: 100%;
+        
+        }
+
+        /* #roundResult{
+          background-image: url(/assets/images/computerportrait.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+          background-color: gold;
+          border: 2px;
+          border-style: solid;
+          border-color: goldenrod;
+          text-align: center;
+          vertical-align: text-top;
+          height: 50px;
+          width: 400px;
+          display: inline-block;
+          margin-left: 5px;
+          margin-right: 5px;
+          border-radius: 5px;
+          
+        } */
+
+        #roundResult{
+          background-image: url(/assets/images/rock1.png);
+        border: 2px solid black;
+        padding: 25px;
+        background-repeat: no-repeat;
+        background-size: 450px 100px;
+        width: 400px;
+        height: 54px;
+        text-align: center;
+          vertical-align: text-top;
+          display: inline-block;
+        }
+
+        
+        #computerScoreDisplay {
+          display: inline-block;
+          height: 45px;
+          width: 20px;
+          background-color: white;
+          color: black;
+          vertical-align: text-top;
+          
+        }
+        
+        #playerScoreDisplay {
+          display: inline-block;
+          height: 45px;
+          width: 20;
+          background-color: white;
+          color: black;
+          vertical-align: text-top;
+          
+          
+        }
+
+
+
+
 
 .portrait {
     background-color: rgb(133, 245, 4);
@@ -120,7 +335,7 @@ a {
 #result p{
     vertical-align: bottom;
 }
-
+/* 
 #computerScoreDisplay {
     background-color: rgb(255, 255, 255);
     display: inline-block;
@@ -176,14 +391,14 @@ color: black;
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
-}
+} */
 
 
 .about {
-     text-align: center;
+    margin: auto;
     color: white;
-    width: 100%;
-    height: 300px;
+    width: 600px;
+    height: 500px;
    
     
     

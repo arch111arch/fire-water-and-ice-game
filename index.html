@@ -10,7 +10,7 @@
 <body>
     <header class="nav">
         <!-- Navigation bar to the right, Logo to the Left -->
-        <h1 id="logo">ROCK, PAPER, SCISSORS</h1>
+        <h1 id="logo">ROCK, PAPER & SCISSORS</h1>
         
         <div id="menu">
         <ul>
@@ -27,7 +27,7 @@
     <section>
         <!-- The gameboard area is where the game is played. -->
 <div class="gameBoard">
-    <div  class="portrait" id="enemyPortrait"></div>
+    <!-- <div  class="portrait" id="enemyPortrait"></div>
     <div id="vs">
         <h1>VS</h1>
     </div>
@@ -48,8 +48,71 @@
     </div>
     <br>
     <div id="buttons">3 buttons here</div>
+    </div> -->
+
+
+
+    <div id="cardArea">
+   
+        <div class="box"  id="computerCard">
+         <div class="box" id="cardContainer">
+         
+           
+           <div id="computerChoiceDisplay">
+             <img src="assets/images/no_choicedisplay.png" height="90px" width="90px">
+             </div>
+           </div>   
+           </div>
+           
+           <!-- Computer card ends. -->
+           <div class="box" id="vs"><h1>VS</h1>
+           </div>
+           
+           <div class="box"  id="playerCard">
+             <div class="box" id="cardContainer">
+               
+               <div id="playerChoiceDisplay">
+                <img src="assets/images/no_choicedisplay.png" height="90px" width="90px">
+               </div>
+               
+             </div>
+           </div>
+           
+           </div>
+         <!-- Cardarea ends here -->
+
+
+    <div id="scoreSection">
+    
+    <div id="computerScoreDisplay">
+      <h2>0</h2>
+      </div>
+    <div id="roundResult">Who will win the game? Play and find out!
+   
     </div>
+    <div id="playerScoreDisplay">
+      <h2>0</h2>
+    </div>
+    
+    </div>
+    
+    <div id="choiceButtons">
+    
+  
+    <button id="rock" class="button" onclick="playerChoice(rock)"> </button>
+    <button id="paper" class="button" onclick="playerChoice(paper)">
+    </button>
+    <button id="scissors" class="button" onclick="playerChoice(scissors)">
+    </button>
+      
+    </div>
+
     </section>
+
+    
+    <div id="rock"></div>
+   
+    
 
     <section>
         <h1 id="about">ABOUT THE GAME</h1>

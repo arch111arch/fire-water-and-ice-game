@@ -10,16 +10,16 @@ body{
 
 h1, h3 {
 color: rgb(250, 250, 250);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-letter-spacing: 2px;
+font-family: 'Ysabeau', sans-serif;;
 padding-left: 10px;
 padding-right: 10px;
 }
 
 #logo {
     float: left;
-    font-size: large;
+    font-size: 40px;
     margin-left: 10px;
+    font-family: 'Ysabeau', sans-serif;
 }
 
 .nav {
@@ -56,6 +56,9 @@ a {
    color: aliceblue;
 }
 
+a:hover {
+text-decoration: underline;
+}
 
 .box {
   
@@ -90,35 +93,28 @@ a {
     }
     
     #playerChoiceDisplay {
-      /* background-color: green; */
       position: absolute;
       top: 80%;
       right: 250px;
       width: 90px;
       height: 90px;
       display: inline-block;
-      /* border: 2px; */
-      border-style: solid;
-      border-color: greenyellow;
       
       
     }
     
     p {
       font-size: small;
+      font-family: 'Poppins', sans-serif;
     }
     
     #computerChoiceDisplay {
-      /* background-color: red; */
       position: absolute;
       top: 80%;
       left: 250px;
       width: 75px;
       height: 25px;
       display: inline-block;
-      /* border: 2px; */
-      border-style: solid;
-      border-color: darkred;
      
     }
     
@@ -156,9 +152,22 @@ a {
         padding-bottom: 2px;
         text-align: center;
         width: fit-content;
+        transition: .1s;
+        
         }
 
+        .button:hover {
+          transform: scale(1.1, 1.1);
+
+          }
+
+          .button:active {
+            transform: scale(0.8, 0.8);
+          }
+
+
         #rock{
+          transition-timing-function: ease-in-out;
           background-color: transparent;
           background-image: url(/assets/images/rock_select.png);
            background-size: 100px 100px;
@@ -172,10 +181,12 @@ a {
         padding-bottom: 0%;
         width: 100px;
         height: 100px;
+        transition-timing-function: ease-in-out;
          
         }
       
         #paper{
+          transition-timing-function: ease-in-out;
           background-color: transparent;
           background-image: url(/assets/images/paper_select.png);
            background-size: 100px 100px;
@@ -193,6 +204,7 @@ a {
         }
 
         #scissors{
+          transition-timing-function: ease-in-out;
           background-color: transparent;
           background-image: url(/assets/images/scissors_select.png);
            background-size: 100px 100px;
@@ -243,36 +255,49 @@ a {
 
         #roundResult{
           background-image: url(/assets/images/rock1.png);
-        border: 2px solid black;
-        padding: 25px;
+        border: 0px none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        margin-bottom: 5px;
         background-repeat: no-repeat;
         background-size: 450px 100px;
-        width: 400px;
-        height: 54px;
+        width: 405px;
+        height: 50px;
         text-align: center;
           vertical-align: text-top;
           display: inline-block;
+          font-family: 'Ysabeau', sans-serif;
         }
 
         
         #computerScoreDisplay {
           display: inline-block;
+          margin-right: 10px;
           height: 45px;
-          width: 20px;
-          background-color: white;
-          color: black;
+          width: 45px;
+          color: white;
+          text-align: center;
           vertical-align: text-top;
+            color: rgb(250, 250, 250);
+            font-size: 40px;
+    
+            
           
         }
         
         #playerScoreDisplay {
           display: inline-block;
+          margin-left: 10px;
           height: 45px;
-          width: 20;
-          background-color: white;
-          color: black;
+          width: 45;
+          color: white;
+          text-align: center;
           vertical-align: text-top;
-          
+          color: rgb(250, 250, 250);
+            
+            font-size: 40px;
           
         }
 

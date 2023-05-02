@@ -31,18 +31,18 @@ let p =(buttons [i].id);
 if (x===rock) {
   
   console.log("You found rock.");
-  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/rock_choicedisplay.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
   plChoice = "rock";
 
 
 }else if (x===paper){
   console.log ("you found paper");
-  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/paper_choicedisplay.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
 plChoice = "paper";
 }
   else if(x===scissors){
     console.log('You found scissors');
-    document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/scissors_choicedisplay.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+    document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     plChoice = "scissors";
 }
  
@@ -74,15 +74,16 @@ function computerChoice (){
   if(compChoice == 0){
     compChoice = "rock";
     //console.log(compChoice);
-    document.getElementById("computerChoiceDisplay").innerHTML = "Rock";
+    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
   
   }else if(compChoice == 1){
     compChoice = "paper";
     //console.log(compChoice);
-    document.getElementById("computerChoiceDisplay").innerHTML = "Paper";
+    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+
   }else if(compChoice == 2) {
     compChoice = "scissors";
-    document.getElementById("computerChoiceDisplay").innerHTML = "Scissors";
+    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
   }
 }
@@ -164,7 +165,7 @@ document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr;
 var maxScore;
 function endGame() {
   maxScore = 7;
-let resetCardChoice =  "<img src=\"/assets/images/no_choicedisplay.png\" width=\"90px\" height=\"90px\" border=\"2px\">"
+let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">"
 ;
   
   

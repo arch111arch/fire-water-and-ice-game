@@ -15,17 +15,23 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
-#logo {
+.logoWrapper {
     /* float: left; */
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 10px;
     font-family: 'Ysabeau', sans-serif;
+
 }
 
-#logo1 {
-  outline-color: blue;
-  
+#logoFire {
+  color:darkorange;
+}
 
+#logoWater {
+  color:dodgerblue;
+}
+#logoIce {
+  color:aliceblue;
 }
 
 .nav {

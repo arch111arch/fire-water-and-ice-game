@@ -3,7 +3,9 @@
 //document.getElementById("demo").innerHTML = "dfg";
 let plChoice;
 let computerScore =0;
+let computerTotalScore =0;
 let playerScore =0;
+let playerTotalScore =0;
 let highScore =0;
 
 
@@ -149,19 +151,22 @@ function winner (){
 
 function playerScoreUp() {
 playerScore +=1;
-highScore +=1;
+playerTotalScore +=1;
 var playerScoreStr = '<h2>' + playerScore + '</h2>';
 document.getElementById ("playerScoreDisplay").innerHTML = playerScoreStr;
-highScoreStr = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
-  document.getElementById ("highscoreArea").innerHTML = highScoreStr;
+playerTotalScoreStr = '<h3>' + "Total Score: " + playerTotalScore + '</h3>';
+  document.getElementById ("playerTotalScore").innerHTML = playerTotalScoreStr;
   
 }
 
 function computerScoreUp(){
   
 computerScore +=1;
+computerTotalScore +=1;
 var computerScoreStr = '<h2>' + computerScore + '</h2>';
 document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr;
+computerTotalScoreStr = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
+  document.getElementById ("computerTotalScore").innerHTML = computerTotalScoreStr;
 
 }
 

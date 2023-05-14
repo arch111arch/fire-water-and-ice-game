@@ -187,6 +187,7 @@ let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90p
 
     msg = "Congratulations! Count Catula is defeated!";
     document.getElementById("roundResult").innerHTML = msg;
+    reveal();
     
    // alert("Congratulations! The evil Lord Catula is defeated. He will rise again. Can you defeat him again?");
    
@@ -213,6 +214,8 @@ playerScore = 0;
 
     msg = "Count Catula defeated you! Try again.";
     document.getElementById("roundResult").innerHTML = msg;
+reveal();
+  
     
   
     //alert("No! The evil Lord Catula has defeated you! Will you return to the castle and try again?");
@@ -237,6 +240,11 @@ function gameLoop(){
 }
 
 function reveal() {
-  let hidden = document.getElementById("hidden").display;
-  hidden.innerHTML = block;
+  let roundOver = document.getElementById("roundOver");
+  roundOver.style.display= "inline-block";
+}
+
+function hide() {
+  let roundOver = document.getElementById("roundOver");
+  roundOver.style.display= "none";
 }

@@ -4,6 +4,7 @@
 let plChoice;
 let computerScore =0;
 let playerScore =0;
+let highScore =0;
 
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
@@ -108,38 +109,38 @@ function winner (){
   
  else if(plChoice === "rock" && compChoice === "paper") {
     console.log("Paper covers rock. Computer wins!");
-    msg = "Paper covers rock. Computer Wins.";
+    msg = "Water extinguishes the Fire. Computer Wins.";
     computerScoreUp();
     
     
   }else if (plChoice === "rock" && compChoice =="scissors") {
     console.log("Rock beats scissors. you win.");
-    msg = "Rock smashes scissors. You win!";
+    msg = "Fire melts the Ice. You win!";
     playerScoreUp();
     
     
   }else if(plChoice === "paper" && compChoice === "rock"){
     console.log("Paper covers rock. you win.");
-    msg = "Paper covers rock. You Win!";
+    msg = "Water extinguishes the Fire. You Win!";
     playerScoreUp();
     
     
   }else if(plChoice === "paper" && compChoice === "scissors") {
     console.log("Scissors cuts paper. Computer Wins");
-    msg = "Scissors cuts paper. Computer Wins!";
+    msg = "Ice freezes the Water. Computer Wins!";
     computerScoreUp();
     
     
   }else if(plChoice ==="scissors" && compChoice === "paper") {
     console.log("Scissors cuts paper. You win.")
-    msg = "Scissors cuts paper. You win";
+    msg = "Ice freezes the water. You win";
     playerScoreUp();
     
     
     
   }else if(plChoice === "scissors" && compChoice === "rock"){
     console.log("Rock smashes scissors. Computer wins.");
-    msg = "Rock smashes scissors. Computer wins!";
+    msg = "Fire melts the Ice. Computer wins!";
     computerScoreUp();
     
   } document.getElementById("roundResult").innerHTML = msg;
@@ -148,9 +149,11 @@ function winner (){
 
 function playerScoreUp() {
 playerScore +=1;
+highScore +=1;
 var playerScoreStr = '<h2>' + playerScore + '</h2>';
 document.getElementById ("playerScoreDisplay").innerHTML = playerScoreStr;
-  
+highScoreStr = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
+  document.getElementById ("highscoreArea").innerHTML = highScoreStr;
   
 }
 

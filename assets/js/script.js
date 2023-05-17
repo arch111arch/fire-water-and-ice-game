@@ -195,7 +195,7 @@ let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90p
 
     msg = "Congratulations! Count Catula is defeated!";
     document.getElementById("roundResult").innerHTML = msg;
-    reveal();
+    reveal2();
     
    // alert("Congratulations! The evil Lord Catula is defeated. He will rise again. Can you defeat him again?");
    
@@ -254,5 +254,15 @@ function reveal() {
 
 function hide() {
   let roundOver = document.getElementById("roundOver");
+  roundOver.style.display= "none";
+}
+
+function reveal2() {
+  let roundOver = document.getElementById("roundOver2");
+  roundOver.style.display= "inline-block";
+}
+
+function hide2() {
+  let roundOver = document.getElementById("roundOver2");
   roundOver.style.display= "none";
 }

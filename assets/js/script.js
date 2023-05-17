@@ -7,8 +7,8 @@ let computerTotalScore =0;
 let playerScore =0;
 let playerTotalScore =0;
 let highScore =0;
-let playerLives =5;
-let computerLives =5;
+let playerLives =4;
+let computerLives =4;
 
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
@@ -59,11 +59,11 @@ plChoice = "paper";
 //    console.log ("you found" + p);
  //   break;
 //  }
+
  }  
- console.log ("End of List");
  computerChoice();
  winner();
- endGame();
+ endRound();
  }
  
  
@@ -149,6 +149,7 @@ function winner (){
     
   } document.getElementById("roundResult").innerHTML = msg;
   
+  
 }
 
 function playerScoreUp() {
@@ -173,11 +174,11 @@ computerTotalScoreStr = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
 }
 
 var maxScore;
-function endGame() {
-  maxScore = 7;
+function endRound() {
+  maxScore = 3;
 let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">"
 ;
-  
+
   
   if(maxScore === playerScore){
    playerScore =0;
@@ -195,7 +196,7 @@ let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90p
     document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
     // Reset choices end.
 
-    msg = "Congratulations! Count Catula is defeated!";
+    msg = "You won this Round.";
     document.getElementById("roundResult").innerHTML = msg;
     reveal2();
     
@@ -222,7 +223,7 @@ playerScore = 0;
     // Reset choices end.
     
 
-    msg = "Count Catula defeated you! Try again.";
+    msg = "Computer won this Round.";
     document.getElementById("roundResult").innerHTML = msg;
 reveal();
   
@@ -245,9 +246,6 @@ document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr;
 document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 }
 
-function gameLoop(){
-  
-}
 
 function reveal() {
   let roundOver = document.getElementById("computerWonRound");
@@ -258,6 +256,7 @@ function hide() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "none";
   playerLooseLife();
+  gameOver();
   
 }
 
@@ -270,17 +269,19 @@ function hide2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
   computerLooseLife();
+  gameOver();
   
 }
 
 function computerLooseLife() {
 
   let computerLivesDisplay = document.getElementById("computerLivesDisplay");
-
+  
   var x = document.getElementsByClassName("computerLife")[0];
-    
-   
+
   x.remove();
+  computerLives -=1;
+  console.log("Computer Lives : " + computerLives);
 
 
 }
@@ -290,9 +291,22 @@ function playerLooseLife() {
   let playerLivesDisplay = document.getElementById("playerLivesDisplay");
 
   var x = document.getElementsByClassName("playerLife")[0];
-    
    
   x.remove();
+  playerLives -=1;
+  console.log("player Lives : " + playerLives);
+}
+
+function gameOver() {
+
+  if (playerLives === 0 ) {
+console.log("Player lost the game!");
+
+  }
+else if (computerLives === 0) {
+console.log("Victory! You won the game!");
+}
 
 
 }
+

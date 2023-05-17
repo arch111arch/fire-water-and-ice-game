@@ -7,6 +7,8 @@ let computerTotalScore =0;
 let playerScore =0;
 let playerTotalScore =0;
 let highScore =0;
+let playerLives =5;
+let computerLives =5;
 
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
@@ -255,6 +257,8 @@ function reveal() {
 function hide() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "none";
+  playerLooseLife();
+  
 }
 
 function reveal2() {
@@ -265,4 +269,30 @@ function reveal2() {
 function hide2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
+  computerLooseLife();
+  
+}
+
+function computerLooseLife() {
+
+  let computerLivesDisplay = document.getElementById("computerLivesDisplay");
+
+  var x = document.getElementsByClassName("computerLife")[0];
+    
+   
+  x.remove();
+
+
+}
+
+function playerLooseLife() {
+
+  let playerLivesDisplay = document.getElementById("playerLivesDisplay");
+
+  var x = document.getElementsByClassName("playerLife")[0];
+    
+   
+  x.remove();
+
+
 }

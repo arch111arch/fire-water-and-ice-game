@@ -169,7 +169,17 @@ text-decoration: underline;
       
       
     }
-    
+
+    #playerLivesDisplay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+      
+    }
+
     p {
       font-size: small;
       font-family: 'Poppins', sans-serif;
@@ -184,7 +194,34 @@ text-decoration: underline;
       display: inline-block;
      
     }
-    
+
+    #computerLivesDisplay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+     
+    }
+
+  .computerLife {
+    background-image: url(/assets/images/heart.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .playerLife {
+    background-image: url(/assets/images/heart.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
     
     #cardContainer {
      

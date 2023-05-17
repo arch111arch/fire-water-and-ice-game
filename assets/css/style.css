@@ -535,42 +535,78 @@ color: black;
         display: inline-block;        
     }
 
-    #roundOver {
-      background-color: rgb(226, 13, 24);
-      background-image: url(/assets/images/computerportrait.jpg);
+    #roundEnd {
+      margin: auto;
+      position:relative;
+      margin-top: 130px;
+      padding-top: 10px;
+      text-align: center;
+      
+      width: 490px;
+      height: 680px;
+      display: block;
+background: transparent;
+      /* background-color:rgb(66, 66, 66); */
+      background-image: url(/assets/images/bigstone_bg.png);
+      background-size: 485px 700px;
+      
+      
+      /* background-size: contain; */
+      background-repeat: no-repeat;
+      background-position: center;
+
+      /* border-width: 4px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px; */
+
+    }
+
+    #roundEndContent {
+      margin: auto;
+      position:relative;
+      padding-top: 65px;
+      text-align: center;
+      
+      display: block;
+
+    }
+
+    #computerWonRound {
+      background-color:rgba(255,0,0,0.6);
+      /* background-image: url(/assets/images/smallstone_bg.png);
       background-size: contain;
       background-repeat: no-repeat;
-      border-radius: 10px;
+      background-position: center; */
       border-width: 2px;
       border-style: solid;
       border-color: rgb(247, 9, 9);
-      width: 600px;
-      height: 340px;
+      /* width: 600px;
+      height: 340px; */
+      height:100%;
+      width:100%;
       display:none;
-      
-      position:absolute;
+      position:fixed;
+      /* position:absolute;
       margin-left: 90px;
-      margin-top: 400px;
+      margin-top: 400px; */
       
       z-index: 30;
   }
 
-  #roundOver2{
-    background-color: rgb(13, 226, 24);
+  #playerWonRound{
+    background-color:rgba(0,255,0,0.6);
     /* background-image: url(/assets/images/computerportrait.jpg);
     background-size: contain;
     background-repeat: no-repeat; */
-    border-radius: 10px;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(247, 9, 9);
-    width: 600px;
-    height: 340px;
-    display:none;
     
-    position:absolute;
-    margin-left: 90px;
-    margin-top: 400px;
+    height:100%;
+      width:100%;
+      display:none;
+      position:fixed;
     
     z-index: 30;
 }

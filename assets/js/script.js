@@ -248,21 +248,21 @@ function gameLoop(){
 }
 
 function reveal() {
-  let roundOver = document.getElementById("roundOver");
+  let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "inline-block";
 }
 
 function hide() {
-  let roundOver = document.getElementById("roundOver");
+  let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "none";
 }
 
 function reveal2() {
-  let roundOver = document.getElementById("roundOver2");
+  let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "inline-block";
 }
 
 function hide2() {
-  let roundOver = document.getElementById("roundOver2");
+  let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
 }

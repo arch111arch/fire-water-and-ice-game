@@ -11,8 +11,33 @@
     <title>Fire, Water & Ice Game</title>
 </head>
 <body>
+
+    <!-- Pupup when Computer or player winds a round. -->
+    <div id="computerWonRound" onclick="hide()">
+    
+    <div id="roundEnd">
+        
+        <div id="roundEndContent">
+            <h3>Computer Won the Round!</h3>
+            <img src="assets/images/computer_smiling.jpg" height="65%" width="65%">
+            <h3>You Loose One Life.</h3>
+        </div>
+
+    </div>
+    </div>
+    <div id="playerWonRound" onclick="hide2()">
+    <div id="roundEnd">
+
+        <div id="roundEndContent">
+            <h3>You Won the Round!</h3>
+            <img src="assets/images/player_smiling.jpg" height="65%" width="65%">
+            <h3>Computer Looses One Life.</h3>
+        </div>
+
+    </div>
+    </div>
+    
     <header class="nav">
-        <!-- Navigation bar to the right, Logo to the Left -->
         <div class="logoWrapper">
         <ul>
 <li>
@@ -41,6 +66,8 @@
             
 </div>
     </header>
+    
+
     <!-- Here the current game and Highscore is shown. -->
     <div id="scoreContainer">
         <!-- Computers Total score. Updates after each round. -->
@@ -53,6 +80,8 @@
     <div id="playerTotalScore"><h3>Total Score: 0</h3>
     </div>
 </div>
+
+
 
     <section>
         <!-- The gameboard area is where the game is played. -->
@@ -78,13 +107,13 @@
     </div>
     <br>
     <div id="buttons">3 buttons here</div>-->
-
+   
 
 
     <div id="cardArea">
         <div id="roundContainer">
-            <div id="roundOver" onclick="hide()"></div>
-            <div id="roundOver2" onclick="hide2()"></div>
+            <!-- <div id="roundOver" onclick="hide()"></div>
+            <div id="roundOver2" onclick="hide2()"></div> -->
    
         <div class="box"  id="computerCard">
          <div class="box" id="cardContainer">

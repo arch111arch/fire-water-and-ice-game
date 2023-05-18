@@ -9,6 +9,7 @@ let playerTotalScore =0;
 let highScore =0;
 let playerLives =4;
 let computerLives =4;
+var victory = false;
 
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
@@ -61,6 +62,7 @@ plChoice = "paper";
 //  }
 
  }  
+
  computerChoice();
  winner();
  endRound();
@@ -91,6 +93,7 @@ function computerChoice (){
     document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
   }
+ 
 }
 
 function getWinner() {
@@ -258,6 +261,7 @@ function hide() {
   playerLooseLife();
   gameOver();
   
+  
 }
 
 function reveal2() {
@@ -303,15 +307,71 @@ function gameOver() {
 console.log("Player lost the game!");
 let gameOverMsg = "You are defeated. Play again? ";
     document.getElementById("roundResult").innerHTML = gameOverMsg;
+    score();
+    playerLives =4;
+computerLives =4;
+genesis();
 
   }
 else if (computerLives === 0) {
 console.log("Victory! You won the game!");
 let gameWonMsg = "You won the game! Play";
     document.getElementById("roundResult").innerHTML = gameWonMsg;
-
+    victory = true;
+score();
+playerLives =4;
+computerLives =4;
+genesis();
 }
 
 
 }
+// adds highscore. Resets TotalScore for player and computer. Sets Defeated to False. Lives are worth 100. Victory over computer is worth 1000.
+function score(){
+let livesBonus = playerLives * 100;
+let computerDefeated = 1000;
+  
+if(victory === true){
+playerTotalScore += computerDefeated;
 
+}
+playerTotalScore += livesBonus;
+
+highScore = playerTotalScore;
+  let highscoreString = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
+  document.getElementById("highscoreArea").innerHTML = highscoreString;
+
+victory = false;
+playerTotalScore =0;
+computerTotalScore =0;
+let resetComputerTotalString = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
+let resetPlayerTotalString = '<h3>' + "Total Score: " + playerTotalScore + '</h3>';
+
+document.getElementById("computerTotalScore").innerHTML = resetComputerTotalString;
+document.getElementById("playerTotalScore").innerHTML = resetPlayerTotalString;
+
+
+
+}
+
+// Creates 4 lives after the game has ended.
+function genesis() {
+  let wrapper = document.getElementById("computerLivesDisplay");
+  let heart = document.createElement('div');
+  heart.className= "computerLife";
+  heart.value="computerLife";
+let i= 0;
+  do {
+    let heart = document.createElement('div');
+    heart.className= "computerLife";
+    heart.value="computerLife";
+    wrapper.appendChild(heart);
+  i++;
+
+}
+while(i < 4);
+
+  console.log("NEw HEart");
+
+
+}

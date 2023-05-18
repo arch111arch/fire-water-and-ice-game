@@ -301,10 +301,15 @@ function gameOver() {
 
   if (playerLives === 0 ) {
 console.log("Player lost the game!");
+let gameOverMsg = "You are defeated. Play again? ";
+    document.getElementById("roundResult").innerHTML = gameOverMsg;
 
   }
 else if (computerLives === 0) {
 console.log("Victory! You won the game!");
+let gameWonMsg = "You won the game! Play";
+    document.getElementById("roundResult").innerHTML = gameWonMsg;
+
 }
 
 

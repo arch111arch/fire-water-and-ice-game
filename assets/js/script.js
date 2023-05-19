@@ -10,6 +10,7 @@ let highScore =0;
 let playerLives =4;
 let computerLives =4;
 var victory = false;
+let gold =0;
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 //let cScoreMsg = document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr; 
@@ -246,6 +247,7 @@ function hide2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
   computerLooseLife();
+  lootGenerator();
   gameOver();
 }
 
@@ -286,7 +288,7 @@ restorePlayerLives();
   }
 else if (computerLives === 0) {
 console.log("Victory! You won the game!");
-let gameWonMsg = "You won the game! Play";
+let gameWonMsg = "You won the game! Play again?";
     document.getElementById("roundResult").innerHTML = gameWonMsg;
     victory = true;
 score();
@@ -301,12 +303,14 @@ restorePlayerLives();
 function score(){
 let livesBonus = playerLives * 100;
 let computerDefeated = 1000;
+let goldBonus = gold * 10;
   
 if(victory === true){
 playerTotalScore += computerDefeated;
 
 }
 playerTotalScore += livesBonus;
+playerTotalScore += goldBonus;
 
 highScore = playerTotalScore;
   let highscoreString = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
@@ -315,6 +319,7 @@ highScore = playerTotalScore;
 victory = false;
 playerTotalScore =0;
 computerTotalScore =0;
+gold =0;
 let resetComputerTotalString = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
 let resetPlayerTotalString = '<h3>' + "Total Score: " + playerTotalScore + '</h3>';
 
@@ -339,9 +344,7 @@ let i= 0;
   i++;
 }
 while(i < 4);
-
   console.log("NEw HEart");
-
 }
 
 // Creates 4 lives after the game has ended.
@@ -360,7 +363,39 @@ let i= 0;
   i++;
 }
 while(i < 4);
-
   console.log("NEw HEart");
+}
 
+// Lootgenerator
+
+let lootResult = 0;
+
+function lootGenerator (){
+  
+//  let compChoice =0;
+  
+lootResult = Math.floor(Math.random()  * 6 );
+  console.log(lootResult);
+  
+  if(lootResult == 0){
+    lootResult = "gold";
+    gold += 1;
+    console.log("You found 10 gold.");
+
+    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+  
+  }else if(compChoice == 1){
+    lootResult = "noLoot";
+    console.log("You found no loot.");
+    
+    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+
+  }else if(lootResult == 2) {
+    lootResult = "bagOfGold";
+    console.log("You found 100 gold.");
+    gold += 100;
+
+    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+    
+  }
 }

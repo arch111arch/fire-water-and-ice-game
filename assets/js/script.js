@@ -373,6 +373,20 @@ while(i < 4);
   console.log("NEw HEart");
 }
 
+// Extra Life
+function extraLife() {
+  let playerWrapper = document.getElementById("playerLivesDisplay");
+  // let heart = document.createElement('div');
+  // heart.className= "playerLife";
+  // heart.value="playerLife";
+    let heart = document.createElement('div');
+    heart.className= "playerLife";
+    heart.value="playerLife";
+    playerWrapper.appendChild(heart);
+    playerLives +=1;
+    console.log("player Lives : " + playerLives);
+}
+
 // Lootgenerator
 
 let lootResult = 0;
@@ -385,6 +399,7 @@ lootResult = Math.floor(Math.random()  * 6 );
 
 let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
+let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" height=\"70px\">";
   
   if(lootResult == 0){
     gold += 1;
@@ -417,9 +432,10 @@ let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" he
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
   }else if(lootResult == 4) {
-    console.log("You found no loot.");
-    document.getElementById("lootContainer").innerHTML = '';
-    document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+    console.log("ExtraLife");
+    document.getElementById("lootContainer").innerHTML = lifePotionLoot;
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
+    extraLife();
 
   }else if(lootResult == 5) {
     gold += 1;
@@ -430,4 +446,6 @@ let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" he
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
 }
+
+
 }

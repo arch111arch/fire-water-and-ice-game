@@ -11,7 +11,6 @@ let playerLives =4;
 let computerLives =4;
 var victory = false;
 
-
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 //let cScoreMsg = document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr; 
 
@@ -23,14 +22,11 @@ function change (){
   document.getElementById ("kk");
   kk.style.color = "green";
   console.log ("color is green");
-  
 }
 
 function playerChoice (x){
 
-
   let buttons = document.getElementsByClassName ("button");
- 
   
  for (let i=0; i<buttons.length; i++){
 let p =(buttons [i].id);
@@ -68,7 +64,6 @@ plChoice = "paper";
  endRound();
  }
  
- 
  let compChoice = 0;
 
 function computerChoice (){
@@ -93,7 +88,6 @@ function computerChoice (){
     document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
   }
- 
 }
 
 function getWinner() {
@@ -102,12 +96,10 @@ function getWinner() {
   
   console.log(joj + coc);
   
-  
 }
 let msg;
 
 function winner (){
-  
   
   if (plChoice === compChoice) {
     console.log("Its a draw.");
@@ -119,31 +111,25 @@ function winner (){
     msg = "Water extinguishes the Fire. Computer Wins.";
     computerScoreUp();
     
-    
   }else if (plChoice === "rock" && compChoice =="scissors") {
     console.log("Rock beats scissors. you win.");
     msg = "Fire melts the Ice. You win!";
     playerScoreUp();
-    
     
   }else if(plChoice === "paper" && compChoice === "rock"){
     console.log("Paper covers rock. you win.");
     msg = "Water extinguishes the Fire. You Win!";
     playerScoreUp();
     
-    
   }else if(plChoice === "paper" && compChoice === "scissors") {
     console.log("Scissors cuts paper. Computer Wins");
     msg = "Ice freezes the Water. Computer Wins!";
     computerScoreUp();
     
-    
   }else if(plChoice ==="scissors" && compChoice === "paper") {
     console.log("Scissors cuts paper. You win.")
     msg = "Ice freezes the water. You win";
     playerScoreUp();
-    
-    
     
   }else if(plChoice === "scissors" && compChoice === "rock"){
     console.log("Rock smashes scissors. Computer wins.");
@@ -151,7 +137,6 @@ function winner (){
     computerScoreUp();
     
   } document.getElementById("roundResult").innerHTML = msg;
-  
   
 }
 
@@ -162,7 +147,6 @@ var playerScoreStr = '<h2>' + playerScore + '</h2>';
 document.getElementById ("playerScoreDisplay").innerHTML = playerScoreStr;
 playerTotalScoreStr = '<h3>' + "Total Score: " + playerTotalScore + '</h3>';
   document.getElementById ("playerTotalScore").innerHTML = playerTotalScoreStr;
-  
 }
 
 function computerScoreUp(){
@@ -173,7 +157,6 @@ var computerScoreStr = '<h2>' + computerScore + '</h2>';
 document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr;
 computerTotalScoreStr = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
   document.getElementById ("computerTotalScore").innerHTML = computerTotalScoreStr;
-
 }
 
 var maxScore;
@@ -181,7 +164,6 @@ function endRound() {
   maxScore = 3;
 let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">"
 ;
-
   
   if(maxScore === playerScore){
    playerScore =0;
@@ -212,7 +194,6 @@ let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90p
 computerScore = 0;
 playerScore = 0;
 
-
   let resetPlayerString = '<h2>' + playerScore + '</h2>';
   document.getElementById("playerScoreDisplay").innerHTML = 
   resetPlayerString;
@@ -224,19 +205,14 @@ playerScore = 0;
     document.getElementById("computerChoiceDisplay").innerHTML = resetCardChoice;
     document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
     // Reset choices end.
-    
 
     msg = "Computer won this Round.";
     document.getElementById("roundResult").innerHTML = msg;
-reveal();
-  
-    
+reveal();  
   
     //alert("No! The evil Lord Catula has defeated you! Will you return to the castle and try again?");
     
   }
-  
-  
   
 }
 
@@ -249,7 +225,6 @@ document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr;
 document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 }
 
-
 function reveal() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "inline-block";
@@ -259,9 +234,7 @@ function hide() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "none";
   playerLooseLife();
-  gameOver();
-  
-  
+  gameOver(); 
 }
 
 function reveal2() {
@@ -274,7 +247,6 @@ function hide2() {
   roundOver.style.display= "none";
   computerLooseLife();
   gameOver();
-  
 }
 
 function computerLooseLife() {
@@ -286,8 +258,6 @@ function computerLooseLife() {
   x.remove();
   computerLives -=1;
   console.log("Computer Lives : " + computerLives);
-
-
 }
 
 function playerLooseLife() {
@@ -310,7 +280,8 @@ let gameOverMsg = "You are defeated. Play again? ";
     score();
     playerLives =4;
 computerLives =4;
-genesis();
+restoreComputerLives();
+restorePlayerLives();
 
   }
 else if (computerLives === 0) {
@@ -321,9 +292,9 @@ let gameWonMsg = "You won the game! Play";
 score();
 playerLives =4;
 computerLives =4;
-genesis();
+restoreComputerLives();
+restorePlayerLives();
 }
-
 
 }
 // adds highscore. Resets TotalScore for player and computer. Sets Defeated to False. Lives are worth 100. Victory over computer is worth 1000.
@@ -350,28 +321,46 @@ let resetPlayerTotalString = '<h3>' + "Total Score: " + playerTotalScore + '</h3
 document.getElementById("computerTotalScore").innerHTML = resetComputerTotalString;
 document.getElementById("playerTotalScore").innerHTML = resetPlayerTotalString;
 
-
-
 }
 
 // Creates 4 lives after the game has ended.
-function genesis() {
-  let wrapper = document.getElementById("computerLivesDisplay");
-  let heart = document.createElement('div');
-  heart.className= "computerLife";
-  heart.value="computerLife";
+function restoreComputerLives() {
+  let computerWrapper = document.getElementById("computerLivesDisplay");
+  computerWrapper.innerHTML = '';
+  // let heart = document.createElement('div');
+  // heart.className= "computerLife";
+  // heart.value="computerLife";
 let i= 0;
   do {
     let heart = document.createElement('div');
     heart.className= "computerLife";
     heart.value="computerLife";
-    wrapper.appendChild(heart);
+    computerWrapper.appendChild(heart);
   i++;
-
 }
 while(i < 4);
 
   console.log("NEw HEart");
 
+}
+
+// Creates 4 lives after the game has ended.
+function restorePlayerLives() {
+  let playerWrapper = document.getElementById("playerLivesDisplay");
+  playerWrapper.innerHTML = '';
+  // let heart = document.createElement('div');
+  // heart.className= "playerLife";
+  // heart.value="playerLife";
+let i= 0;
+  do {
+    let heart = document.createElement('div');
+    heart.className= "playerLife";
+    heart.value="playerLife";
+    playerWrapper.appendChild(heart);
+  i++;
+}
+while(i < 4);
+
+  console.log("NEw HEart");
 
 }

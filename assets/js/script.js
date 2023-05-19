@@ -317,9 +317,11 @@ playerTotalScore += computerDefeated;
 playerTotalScore += livesBonus;
 playerTotalScore += goldBonus;
 
-highScore = playerTotalScore;
+if(playerTotalScore > highScore){
+  highScore = playerTotalScore;
   let highscoreString = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
   document.getElementById("highscoreArea").innerHTML = highscoreString;
+}
 
 victory = false;
 playerTotalScore =0;

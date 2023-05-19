@@ -91,13 +91,13 @@ function computerChoice (){
   }
 }
 
-function getWinner() {
-  let joj = plChoice;
-  let coc = compChoice;
+// function getWinner() {
+//   let joj = plChoice;
+//   let coc = compChoice;
   
-  console.log(joj + coc);
+//   console.log(joj + coc);
   
-}
+// }
 let msg;
 
 function winner (){
@@ -241,13 +241,14 @@ function hide() {
 function reveal2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "inline-block";
+  lootGenerator();
 }
 
 function hide2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
   computerLooseLife();
-  lootGenerator();
+  
   gameOver();
 }
 
@@ -284,6 +285,8 @@ let gameOverMsg = "You are defeated. Play again? ";
 computerLives =4;
 restoreComputerLives();
 restorePlayerLives();
+document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
+
 
   }
 else if (computerLives === 0) {
@@ -296,6 +299,8 @@ playerLives =4;
 computerLives =4;
 restoreComputerLives();
 restorePlayerLives();
+document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
+
 }
 
 }
@@ -372,30 +377,55 @@ let lootResult = 0;
 
 function lootGenerator (){
   
-//  let compChoice =0;
+let lootArea = document.getElementById("lootArea");
   
 lootResult = Math.floor(Math.random()  * 6 );
-  console.log(lootResult);
+
+let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
+let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
   
   if(lootResult == 0){
-    lootResult = "gold";
     gold += 1;
+    let goldTotal = gold;
     console.log("You found 10 gold.");
-
-    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
-  
-  }else if(compChoice == 1){
-    lootResult = "noLoot";
-    console.log("You found no loot.");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Gold Coin!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = goldLoot;
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
     
-    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
 
-  }else if(lootResult == 2) {
-    lootResult = "bagOfGold";
-    console.log("You found 100 gold.");
+  }else if(lootResult == 1) {
     gold += 100;
+    let goldTotal = gold;
+    console.log("You found 100 gold.");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = bagOfGoldLoot;
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
-    //document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
-    
-  }
+  }else if(lootResult == 2){
+    console.log("You found no loot.");
+    document.getElementById("lootContainer").innerHTML = '';
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+   
+  }else if(lootResult == 3) {
+    gold += 100;
+    let goldTotal = gold;
+    console.log("You found 100 gold.");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = bagOfGoldLoot;
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+
+  }else if(lootResult == 4) {
+    console.log("You found no loot.");
+    document.getElementById("lootContainer").innerHTML = '';
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+
+  }else if(lootResult == 5) {
+    gold += 1;
+    let goldTotal = gold;
+    console.log("You found 10 gold.");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Gold Coin!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = goldLoot;
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+
+}
 }

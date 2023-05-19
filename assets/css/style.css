@@ -180,6 +180,44 @@ text-decoration: underline;
       
     }
 
+    #playerGoldDisplay {
+      position: absolute;
+      top: 10px;
+      left: 240px;
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+      
+    }
+
+    #playerGoldCounter {
+      position: absolute;
+      top: 10px;
+      left: 290px;
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+      
+    }
+
+    .playerGold {
+      background-image: url(/assets/images/goldcoin.png);
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+  
+    }
+
+    .playerGoldBag {
+      background-image: url(/assets/images/bagofgold.png);
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+  
+    }
+
     p {
       font-size: small;
       font-family: 'Poppins', sans-serif;
@@ -646,4 +684,16 @@ background: transparent;
       position:fixed;
     
     z-index: 30;
+}
+
+/* Shows loot when player wins the round. */
+#lootContainer {
+  position: absolute;
+  bottom: 120px;
+  left: 190px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  z-index: 35;
+  
 }

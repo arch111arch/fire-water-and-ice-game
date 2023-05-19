@@ -29,11 +29,13 @@
 
     <div id="playerWonRound" onclick="hide2()">
     <div id="roundEnd">
+<div id="lootContainer"></div>
+
 
         <div id="roundEndContent">
             <h3>You Won the Round!</h3>
             <img src="assets/images/player_smiling.jpg" height="65%" width="65%">
-            <h3>Computer Looses One Life.</h3>
+            <h3 id="lootArea"></h3>
         </div>
 
     </div>
@@ -146,6 +148,14 @@
                <div id="playerLivesDisplay">
                 <div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div>
                </div>
+
+               <div id="playerGoldDisplay">
+                <div class="playerGold"></div>
+               </div>
+
+               <div id="playerGoldCounter"><h2>0</h2>
+               </div>
+               
 
              </div>
            </div>

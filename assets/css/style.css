@@ -183,8 +183,8 @@ text-decoration: underline;
     #playerGoldDisplay {
       position: absolute;
       top: 10px;
-      left: 240px;
-      width: 100%;
+      right: 80px;
+      width: 40px;
       display: inline-block;
       text-align: left;
       
@@ -193,8 +193,8 @@ text-decoration: underline;
     #playerGoldCounter {
       position: absolute;
       top: 10px;
-      left: 290px;
-      width: 100%;
+      right: 20px;
+      width: 50px;
       display: inline-block;
       text-align: left;
       

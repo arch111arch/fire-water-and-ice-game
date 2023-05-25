@@ -28,24 +28,49 @@ function change (){
 function playerChoice (x){
 
   let buttons = document.getElementsByClassName ("button");
+  let playerChoiceWrapper = document.getElementById("playerChoiceDisplay");
   
  for (let i=0; i<buttons.length; i++){
 let p =(buttons [i].id);
 if (x===rock) {
   
+  let playerChoice = document.createElement('div');
+playerChoice.className= "fireChoice";
+playerChoice.value="fireChoice";
+
+playerChoiceWrapper.innerHTML = ''; 
+    playerChoiceWrapper.appendChild(playerChoice);
   console.log("You found rock.");
-  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+
+
+  // document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
   plChoice = "rock";
 
 
 }else if (x===paper){
+
+  let playerChoice = document.createElement('div');
+  playerChoice.className= "waterChoice";
+  playerChoice.value="waterChoice";
+  
+  playerChoiceWrapper.innerHTML = ''; 
+      playerChoiceWrapper.appendChild(playerChoice);
   console.log ("you found paper");
-  document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+
+  // document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
 plChoice = "paper";
 }
   else if(x===scissors){
+    let playerChoice = document.createElement('div');
+  playerChoice.className= "iceChoice";
+  playerChoice.value="iceChoice";
+  
+  playerChoiceWrapper.innerHTML = ''; 
+      playerChoiceWrapper.appendChild(playerChoice);
+  console.log ("you found paper");
     console.log('You found scissors');
-    document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+
+    // document.getElementById("playerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     plChoice = "scissors";
 }
  
@@ -70,6 +95,7 @@ plChoice = "paper";
 function computerChoice (){
   
 //  let compChoice =0;
+let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
   
   compChoice = Math.floor(Math.random()  * 3 );
   console.log(compChoice);
@@ -77,16 +103,40 @@ function computerChoice (){
   if(compChoice == 0){
     compChoice = "rock";
     //console.log(compChoice);
-    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "fireChoice";
+    computerChoice.value="fireChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+    
+    // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/fire_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
   
   }else if(compChoice == 1){
     compChoice = "paper";
     //console.log(compChoice);
-    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "waterChoice";
+    computerChoice.value="waterChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+
+
+    // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
 
   }else if(compChoice == 2) {
     compChoice = "scissors";
-    document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "iceChoice";
+    computerChoice.value="iceChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+
+
+
+    // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
   }
 }
@@ -165,7 +215,7 @@ function endRound() {
   maxScore = 3;
 let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">"
 ;
-  
+
   if(maxScore === playerScore){
    playerScore =0;
    computerScore = 0;
@@ -177,9 +227,33 @@ let resetCardChoice =  "<img src=\"/assets/images/empty2_krita.png\" width=\"90p
   let resetComputerString = '<h2>' + computerScore + '</h2>';
     document.getElementById("computerScoreDisplay").innerHTML = resetComputerString;
     
-// Reset choices in the cards.  
-    document.getElementById("computerChoiceDisplay").innerHTML = resetCardChoice;
-    document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
+// New code for dynamically editable elements.
+
+let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
+let playerChoiceWrapper = document.getElementById("playerChoiceDisplay");
+  // let heart = document.createElement('div');
+  // heart.className= "playerLife";
+  // heart.value="playerLife";
+    let computerEmptyChoice = document.createElement('div');
+    computerEmptyChoice.className= "emptyChoice";
+    computerEmptyChoice.value="emptyChoice";
+//resets computers choice on the card to no choice.
+computerChoiceWrapper.innerHTML = '';    
+computerChoiceWrapper.appendChild(computerEmptyChoice);
+    console.log("Computer choice is reset");
+//resets playerchoice on the card to no choice.
+let playerEmptyChoice = document.createElement('div');
+    playerEmptyChoice.className= "emptyChoice";
+    playerEmptyChoice.value="emptyChoice";
+
+playerChoiceWrapper.innerHTML = ''; 
+    playerChoiceWrapper.appendChild(playerEmptyChoice);
+    console.log("Player choice is reset");
+
+
+// Reset choices in the cards. old code.  
+    //document.getElementById("computerChoiceDisplay").innerHTML = resetCardChoice;
+    //document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
     // Reset choices end.
 
     msg = "You won this Round.";
@@ -203,9 +277,33 @@ playerScore = 0;
     document.getElementById("computerScoreDisplay").innerHTML = resetComputerString;
   
   // Reset choices in the cards.  
-    document.getElementById("computerChoiceDisplay").innerHTML = resetCardChoice;
-    document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
+    // document.getElementById("computerChoiceDisplay").innerHTML = resetCardChoice;
+    // document.getElementById("playerChoiceDisplay").innerHTML = resetCardChoice;
     // Reset choices end.
+
+    // New code for dynamically editable elements.
+
+let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
+let playerChoiceWrapper = document.getElementById("playerChoiceDisplay");
+  // let heart = document.createElement('div');
+  // heart.className= "playerLife";
+  // heart.value="playerLife";
+    let computerEmptyChoice = document.createElement('div');
+    computerEmptyChoice.className= "emptyChoice";
+    computerEmptyChoice.value="emptyChoice";
+//resets computers choice on the card to no choice.
+computerChoiceWrapper.innerHTML = '';    
+computerChoiceWrapper.appendChild(computerEmptyChoice);
+    console.log("Computer choice is reset");
+//resets playerchoice on the card to no choice.
+let playerEmptyChoice = document.createElement('div');
+    playerEmptyChoice.className= "emptyChoice";
+    playerEmptyChoice.value="emptyChoice";
+
+playerChoiceWrapper.innerHTML = ''; 
+    playerChoiceWrapper.appendChild(playerEmptyChoice);
+    console.log("Player choice is reset");
+
 
     msg = "Computer won this Round.";
     document.getElementById("roundResult").innerHTML = msg;

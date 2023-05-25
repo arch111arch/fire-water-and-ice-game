@@ -218,6 +218,33 @@ text-decoration: underline;
   
     }
 
+    .fireChoice {
+      background-image: url(/assets/images/fire_krita.png);
+      background-size: 90px 90px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+  
+    }
+
+    .waterChoice {
+      background-image: url(/assets/images/water_krita.png);
+      background-size: 90px 90px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+  
+    }
+
+    .iceChoice {
+      background-image: url(/assets/images/ice_krita.png);
+      background-size: 90px 90px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+  
+    }
+
     .playerGoldBag {
       background-image: url(/assets/images/bagofgold.png);
       background-size: 40px 40px;
@@ -780,6 +807,15 @@ background: transparent;
       width: 45px;
       height: 45px;
       display: inline-block;
+    }
+
+    .emptyChoice {
+      background-image: url(/assets/images/empty2_krita.png);
+      background-size: 45px 45px;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+  
     }
 
   .computerLife {

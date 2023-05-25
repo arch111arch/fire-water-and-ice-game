@@ -961,6 +961,53 @@ background: transparent;
    
 }
 
+#roundEnd {
+  margin: auto;
+  position:relative;
+  margin-top: 80px;
+  padding-top: 10px;
+  text-align: center;
+  
+  width: 340px;
+  height: 540px;
+  display: block;
+background: transparent;
+  /* background-color:rgb(66, 66, 66); */
+  background-image: url(/assets/images/bigstone_bg.png);
+  background-size: 350px 560px;
+  
+  
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
 
+  /* border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px; */
+
+}
+
+#roundEndContent {
+  margin: auto;
+  position:relative;
+  padding-top: 70px;
+  text-align: center;
+  
+  display: block;
+  font-size: 18px;
+
+}
+
+/* Shows loot when player wins the round. */
+#lootContainer {
+  position: absolute;
+  bottom: 115px;
+  left: 130px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  z-index: 35;
+}
 
 }

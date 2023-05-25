@@ -793,7 +793,7 @@ background: transparent;
 
     #playerChoiceDisplay {
       position: absolute;
-      top: 60%;
+      top: 75%;
       left: 10px;
       width: 45px;
       height: 45px;
@@ -802,8 +802,8 @@ background: transparent;
 
     #computerChoiceDisplay {
       position: absolute;
-      top: 60%;
-      left: 65px;
+      top: 75%;
+      left: 105px;
       width: 45px;
       height: 45px;
       display: inline-block;
@@ -811,9 +811,36 @@ background: transparent;
 
     .emptyChoice {
       background-image: url(/assets/images/empty2_krita.png);
-      background-size: 45px 45px;
-      width: 45px;
-      height: 45px;
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+  
+    }
+
+    .fireChoice {
+      background-image: url(/assets/images/fire_krita.png);
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+  
+    }
+
+    .waterChoice {
+      background-image: url(/assets/images/water_krita.png);
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+  
+    }
+
+    .iceChoice {
+      background-image: url(/assets/images/ice_krita.png);
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
       display: inline-block;
   
     }
@@ -845,7 +872,7 @@ background: transparent;
   #playerGoldDisplay {
     position: absolute;
     top: 10px;
-    right: 50px;
+    right: 40px;
     width: 20px;
     display: inline-block;
     text-align: left;
@@ -854,7 +881,7 @@ background: transparent;
   #playerGoldCounter {
     position: absolute;
     top: 9px;
-    right: 23px;
+    right: 16px;
     width: 20px;
     display: inline-block;
     text-align: left;

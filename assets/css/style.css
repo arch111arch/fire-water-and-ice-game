@@ -16,10 +16,12 @@ padding-right: 10px;
 }
 
 .logoWrapper {
-    /* float: left; */
     font-size: 20px;
     margin-left: 10px;
     font-family: 'Ysabeau', sans-serif;
+    -webkit-text-stroke: .5px #ffffff;
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; */
+
 
 }
 
@@ -162,11 +164,10 @@ text-decoration: underline;
     #playerChoiceDisplay {
       position: absolute;
       top: 80%;
-      right: 250px;
+      left: 10px;
       width: 90px;
       height: 90px;
       display: inline-block;
-      
       
     }
 
@@ -208,6 +209,14 @@ text-decoration: underline;
       display: inline-block;
   
     }
+    .emptyChoice {
+      background-image: url(/assets/images/empty2_krita.png);
+      background-size: 90px 90px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+  
+    }
 
     .playerGoldBag {
       background-image: url(/assets/images/bagofgold.png);
@@ -227,8 +236,8 @@ text-decoration: underline;
       position: absolute;
       top: 80%;
       left: 250px;
-      width: 75px;
-      height: 25px;
+      width: 90px;
+      height: 90px;
       display: inline-block;
      
     }
@@ -237,7 +246,7 @@ text-decoration: underline;
       position: absolute;
       top: 10px;
       left: 10px;
-      width: 100%;
+      width: 175px;
       display: inline-block;
       text-align: left;
      
@@ -595,8 +604,11 @@ color: black;
 .about {
     margin: auto;
     color: white;
-    width: 600px;
+    width:auto;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 500px;
+    text-align: left;
    
     
     
@@ -713,5 +725,179 @@ background: transparent;
   display: inline-block;
   text-align: left;
   z-index: 35;
+}
+
+@media screen and (max-width: 800px) {
+
+  .logoWrapper {
+    font-size: 16px;
+}
   
+  #scoreContainer {
+    height: 40px;
+    padding-top: 0;
+    font-size: 12px;
+    padding-top: 0;
+    margin:auto;
+  }
+
+  .box {
+    position: relative;
+    width: 165px;
+      height: 250px;
+      display: inline-block;
+      border-radius: 10px;
+      z-index: 1;
+    }
+
+    #vs {
+      display: none;
+      width: 10px;
+      height: 20px;
+      
+      border-radius: 0;
+      text-align: center;
+      vertical-align: text-bottom;
+     padding-bottom: 150px;
+     padding-left: 0px;
+     padding-right: 0px;
+     font-size: 12px;
+      }
+
+    #playerChoiceDisplay {
+      position: absolute;
+      top: 60%;
+      left: 10px;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+    }
+
+    #computerChoiceDisplay {
+      position: absolute;
+      top: 60%;
+      left: 65px;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+    }
+
+  .computerLife {
+    background-image: url(/assets/images/heart.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .playerLife {
+    background-image: url(/assets/images/heart.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .playerGold {
+    background-image: url(/assets/images/goldcoin.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  #playerGoldDisplay {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 20px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #playerGoldCounter {
+    position: absolute;
+    top: 9px;
+    right: 23px;
+    width: 20px;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px; 
+  }
+
+  #playerLivesDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #computerLivesDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    display: inline-block;
+    text-align: left;
+   
+  }
+
+  #roundResult{
+    background-image: url(/assets/images/rock1.png);
+  border: 0px none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-top: 25px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 255px 70px;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+    vertical-align: text-top;
+    display: inline-block;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 10px;
+  }
+  
+  #computerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+      font-size: 20px;
+  }
+  
+  #playerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 20;
+      font-size: 20px;
+  }
+
+  .about {
+    margin: auto;
+    color: white;
+    width:auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 500px;
+    text-align: left;
+    font-size: 13px;
+    
+}
+
+#about{
+    text-align:center;
+    margin-top: 45px;
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+
+
+
 }

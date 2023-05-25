@@ -122,14 +122,12 @@
          
            
            <div id="computerChoiceDisplay">
-             <img src="assets/images/empty2_krita.png" height="90px" width="90px">
+              <div class="emptyChoice"></div>
              </div>
 
              <div id="computerLivesDisplay">
             <div class="computerLife"></div><div class="computerLife"></div><div class="computerLife"></div><div class="computerLife"></div>
             </div>
-
-             
            </div>   
            </div>
            
@@ -141,9 +139,9 @@
            <div class="box"  id="playerCard">
              <div class="box" id="cardContainer">
                
-               <div id="playerChoiceDisplay">
+               <!-- <div id="playerChoiceDisplay">
                 <img src="assets/images/empty2_krita.png" height="90px" width="90px">
-               </div>
+               </div> -->
                
                <div id="playerLivesDisplay">
                 <div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div>
@@ -153,10 +151,12 @@
                 <div class="playerGold"></div>
                </div>
 
+               <div id="playerChoiceDisplay">
+                <div class="emptyChoice"></div>
+               </div>
+
                <div id="playerGoldCounter"><h2>0</h2>
                </div>
-               
-
              </div>
            </div>
            <!-- Player card ends. -->
@@ -172,12 +172,9 @@
     <div id="computerScoreDisplay">
       <h2>0</h2>
       </div>
-    <div id="roundResult">Can you defeat the evil and save the land?
-        
+    <div id="roundResult">Can you defeat the evil and save the land? 
             
     </div>
-    
-    
 
     <div id="playerScoreDisplay">
       <h2>0</h2>
@@ -186,8 +183,6 @@
     </div>
     
     <div id="choiceButtons">
-        
-        <button id="rock" class="button" onclick="extraLife()"> </button>
     <button id="rock" class="button" onclick="playerChoice(rock)"> </button>
     <button id="paper" class="button" onclick="playerChoice(paper)">
     </button>
@@ -198,29 +193,15 @@
 
     </section>
 
-    
-    
-
     <section>
         <h1 id="about">ABOUT THE GAME</h1>
-<div class="about" id="about">
-    <p class=""> Rock, Paper, SCissors is a game of chance where you play against the computer to get as many points as you can.
+<div class="about">
+    <p class="about"> Rock, Paper, SCissors is a game of chance where you play against the computer to get as many points as you can.
         <br>
         The object of the game is to guess what the opponent will choose and hope that you win. There are many versions of this game as it a classic.
         <br>
    The rules are simple. </p>
-    <br>
-    <p>
-
-    Rock beats Scissors.
-    <br>
-    Paper beats Rock.
-    <br>
-    And Scissors beats paper.
-    </p>
-    <br>
-    <p>Good luck!</p>
-</p>
+    
 </div>
 
     </section>

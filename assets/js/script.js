@@ -11,6 +11,7 @@ let playerLives =4;
 let computerLives =4;
 var victory = false;
 let gold =0;
+var shield = false;
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 //let cScoreMsg = document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr; 
@@ -327,12 +328,13 @@ document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 function reveal() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "inline-block";
+  shieldSaver();
 }
 
 function hide() {
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "none";
-  playerLooseLife();
+  //playerLooseLife();
   gameOver(); 
 }
 
@@ -346,6 +348,7 @@ function hide2() {
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "none";
   computerLooseLife();
+  document.getElementById("lootContainer").innerHTML = "";
   
   gameOver();
 }
@@ -362,14 +365,14 @@ function computerLooseLife() {
 }
 
 function playerLooseLife() {
-
+  
   let playerLivesDisplay = document.getElementById("playerLivesDisplay");
-
   var x = document.getElementsByClassName("playerLife")[0];
-   
   x.remove();
   playerLives -=1;
   console.log("player Lives : " + playerLives);
+  // document.getElementById("looseArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+ 
 }
 
 function gameOver() {
@@ -385,7 +388,9 @@ restoreComputerLives();
 restorePlayerLives();
 document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
 
-
+let shieldSaveWrapper = document.getElementById("shieldDisplay");
+shieldSaveWrapper.innerHTML = ''; 
+shield = false;
   }
 else if (computerLives === 0) {
 console.log("Victory! You won the game!");
@@ -399,7 +404,12 @@ restoreComputerLives();
 restorePlayerLives();
 document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
 
+let shieldSaveWrapper = document.getElementById("shieldDisplay");
+shieldSaveWrapper.innerHTML = ''; 
+shield = false;
 }
+
+
 
 }
 // adds highscore. Resets TotalScore for player and computer. Sets Defeated to False. Lives are worth 100. Victory over computer is worth 1000.
@@ -493,7 +503,7 @@ function lootGenerator (){
   
 let lootArea = document.getElementById("lootArea");
   
-lootResult = Math.floor(Math.random()  * 6 );
+lootResult = Math.floor(Math.random()  * 7 );
 
 let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
@@ -506,7 +516,6 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
     document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Gold Coin!" + '</h3>';
     document.getElementById("lootContainer").innerHTML = goldLoot;
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
-    
 
   }else if(lootResult == 1) {
     gold += 100;
@@ -517,6 +526,7 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
   }else if(lootResult == 2){
+      
     console.log("You found no loot.");
     document.getElementById("lootContainer").innerHTML = '';
     document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
@@ -543,7 +553,41 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
     document.getElementById("lootContainer").innerHTML = goldLoot;
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
+}else if(lootResult == 6) {
+  
+  if (shield === false){
+  let shieldWrapper = document.getElementById("shieldDisplay");
+  let lootShield = document.createElement('div');
+  shield = true;
+
+  lootShield.className = "playerShield";
+  lootShield.value = "playerShield";
+  shieldWrapper.appendChild(lootShield);
+
+  console.log("You got the Shield");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You got the Shield!" + '</h3>';
+}
+else if (shield === true){
+  console.log("You allready have the shield.");
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
 }
 
+}
+}
+// If player has got a Shield, and the computer winds the Round, the Life is saved and the shild is erased. Otherwise Player loose 1 Life.
+function shieldSaver() {
+  let shieldSaveWrapper = document.getElementById("shieldDisplay");
 
+  if (shield === false){
+    document.getElementById("looseArea").innerHTML = '<h3>' + "You Lose One Life." + '</h3>';
+playerLooseLife();
+
+  }else if (shield === true){
+    document.getElementById("looseArea").innerHTML = '<h3>' + "The Shield Protected you!" + '</h3>';
+    shieldSaveWrapper.innerHTML = ''; 
+    shield = false;
+   console.log("The shield saved you.");
+   console.log("player Lives : " + playerLives);
+
+  }
 }

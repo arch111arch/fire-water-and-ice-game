@@ -201,14 +201,6 @@ text-decoration: underline;
       
     }
 
-    .playerGold {
-      background-image: url(/assets/images/goldcoin.png);
-      background-size: 40px 40px;
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-  
-    }
     .emptyChoice {
       background-image: url(/assets/images/empty2_krita.png);
       background-size: 90px 90px;
@@ -241,15 +233,6 @@ text-decoration: underline;
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
-      display: inline-block;
-  
-    }
-
-    .playerGoldBag {
-      background-image: url(/assets/images/bagofgold.png);
-      background-size: 40px 40px;
-      width: 40px;
-      height: 40px;
       display: inline-block;
   
     }
@@ -314,6 +297,71 @@ text-decoration: underline;
     display: inline-block;
 
   }
+
+  .playerGoldBag {
+    background-image: url(/assets/images/bagofgold.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .playerGold {
+    background-image: url(/assets/images/goldcoin.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .playerDiamond {
+    background-image: url(/assets/images/diamond.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .playerCrown {
+    background-image: url(/assets/images/crown.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .playerShield {
+    background-image: url(/assets/images/shield.png);
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+
+  }
+
+  .playerSword {
+    background-image: url(/assets/images/sword.png);
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+
+  }
+
+  #shieldDisplay {
+    position: absolute;
+    top: 70%;
+    left: 210px;
+    width: 100x;
+    height: 100px;
+    display: inline-block;
+    
+  }
+  
     
     #cardContainer {
      
@@ -869,6 +917,15 @@ background: transparent;
     display: inline-block;
   }
 
+  .playerShield {
+    background-image: url(/assets/images/shield.png);
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+
+  }
+
   #playerGoldDisplay {
     position: absolute;
     top: 10px;
@@ -905,6 +962,17 @@ background: transparent;
     display: inline-block;
     text-align: left;
    
+  }
+
+  #shieldDisplay {
+    position: absolute;
+    top: 70%;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: left;
+    
   }
 
   #roundResult{

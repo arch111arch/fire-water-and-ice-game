@@ -791,6 +791,40 @@ background: transparent;
     z-index: 30;
 }
 
+#playerWonTheGame{
+  background-color:rgba(0,255,0,0.6);
+  /* background-image: url(/assets/images/computerportrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(247, 9, 9);
+  
+  height:100%;
+    width:100%;
+    display:none;
+    position:fixed;
+  
+  z-index: 30;
+}
+
+#playerLostTheGame{
+  background-color:rgba(0,255,0,0.6);
+  /* background-image: url(/assets/images/computerportrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(247, 9, 9);
+  
+  height:100%;
+    width:100%;
+    display:none;
+    position:fixed;
+  
+  z-index: 30;
+}
+
 /* Shows loot when player wins the round. */
 #lootContainer {
   position: absolute;

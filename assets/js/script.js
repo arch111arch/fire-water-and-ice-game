@@ -353,6 +353,34 @@ function hide2() {
   gameOver();
 }
 
+
+function reveal3() {
+  let roundOver = document.getElementById("playerWonTheGame");
+  roundOver.style.display= "inline-block";
+  
+}
+
+function hide3() {
+  let roundOver = document.getElementById("playerWonTheGame");
+  roundOver.style.display= "none";
+  
+}
+
+function reveal4() {
+  let roundOver = document.getElementById("playerLostTheGame");
+  roundOver.style.display= "inline-block";
+  
+}
+
+function hide4() {
+  let roundOver = document.getElementById("playerLostTheGame");
+  roundOver.style.display= "none";
+  
+}
+
+
+
+
 function computerLooseLife() {
 
   let computerLivesDisplay = document.getElementById("computerLivesDisplay");
@@ -382,6 +410,7 @@ console.log("Player lost the game!");
 let gameOverMsg = "You are defeated. Play again? ";
     document.getElementById("roundResult").innerHTML = gameOverMsg;
     score();
+    reveal4();
     playerLives =4;
 computerLives =4;
 restoreComputerLives();
@@ -398,6 +427,7 @@ let gameWonMsg = "You won the game! Play again?";
     document.getElementById("roundResult").innerHTML = gameWonMsg;
     victory = true;
 score();
+reveal3();
 playerLives =4;
 computerLives =4;
 restoreComputerLives();
@@ -430,6 +460,8 @@ if(playerTotalScore > highScore){
   let highscoreString = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
   document.getElementById("highscoreArea").innerHTML = highscoreString;
 }
+
+
 
 victory = false;
 playerTotalScore =0;

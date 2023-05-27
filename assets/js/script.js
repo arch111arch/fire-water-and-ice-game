@@ -12,6 +12,7 @@ let computerLives =4;
 var victory = false;
 let gold =0;
 var shield = false;
+var diamond =0;
 
 //let pScoreMsg = document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 //let cScoreMsg = document.getElementById("computerScoreDisplay").innerHTML = computerScoreStr; 
@@ -416,6 +417,7 @@ computerLives =4;
 restoreComputerLives();
 restorePlayerLives();
 document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
+document.getElementById("playerDiamondCounter").innerHTML = '<h2>' + 0 + '</h2>';
 
 let shieldSaveWrapper = document.getElementById("shieldDisplay");
 shieldSaveWrapper.innerHTML = ''; 
@@ -433,6 +435,7 @@ computerLives =4;
 restoreComputerLives();
 restorePlayerLives();
 document.getElementById("playerGoldCounter").innerHTML = '<h2>' + 0 + '</h2>';
+document.getElementById("playerDiamondCounter").innerHTML = '<h2>' + 0 + '</h2>';
 
 let shieldSaveWrapper = document.getElementById("shieldDisplay");
 shieldSaveWrapper.innerHTML = ''; 
@@ -447,6 +450,7 @@ function score(){
 let livesBonus = playerLives * 100;
 let computerDefeated = 1000;
 let goldBonus = gold * 10;
+let diamondBonus = diamond * 200;
   
 if(victory === true){
 playerTotalScore += computerDefeated;
@@ -454,6 +458,7 @@ playerTotalScore += computerDefeated;
 }
 playerTotalScore += livesBonus;
 playerTotalScore += goldBonus;
+playerTotalScore += diamondBonus;
 
 if(playerTotalScore > highScore){
   highScore = playerTotalScore;
@@ -467,6 +472,7 @@ victory = false;
 playerTotalScore =0;
 computerTotalScore =0;
 gold =0;
+diamond =0;
 let resetComputerTotalString = '<h3>' + "Total Score: " + computerTotalScore + '</h3>';
 let resetPlayerTotalString = '<h3>' + "Total Score: " + playerTotalScore + '</h3>';
 
@@ -559,9 +565,12 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
 
   }else if(lootResult == 2){
       
-    console.log("You found no loot.");
-    document.getElementById("lootContainer").innerHTML = '';
-    document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+    diamond +=1;
+    console.log("You found a Diamond!");
+    document.getElementById("playerDiamondCounter").innerHTML = '<h2>' + diamond + '</h2>';
+    // console.log("You found no loot.");
+    // document.getElementById("lootContainer").innerHTML = '';
+    // document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
    
   }else if(lootResult == 3) {
     gold += 100;

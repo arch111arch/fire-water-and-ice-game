@@ -983,6 +983,15 @@ background: transparent;
     display: inline-block;
   }
 
+  .playerDiamond {
+    background-image: url(/assets/images/diamond.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+  }
+
   .playerShield {
     background-image: url(/assets/images/shield.png);
     background-size: 60px 60px;
@@ -1010,6 +1019,28 @@ background: transparent;
     text-align: left;
     font-size: 12px; 
   }
+
+ /* Diamond styling. */
+
+ #playerDiamondDisplay {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  width: 20px;
+  display: inline-block;
+  text-align: left;
+}
+#playerDiamondCounter {
+  position: absolute;
+  top: 35px;
+  right: 16px;
+  width: 20px;
+  display: inline-block;
+  text-align: left;
+  font-size: 12px; 
+}
+
+/* Diamond Styling End. */
 
   #playerLivesDisplay {
     position: absolute;

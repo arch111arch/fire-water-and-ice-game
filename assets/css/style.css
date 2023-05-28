@@ -294,6 +294,15 @@ text-decoration: underline;
 
   }
 
+  .heart {
+    background-image: url(/assets/images/heart.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
   .playerLife {
     background-image: url(/assets/images/heart.png);
     background-size: 40px 40px;
@@ -856,6 +865,184 @@ background: transparent;
   
   z-index: 30;
 }
+
+#endGameGoldDisplay {
+          position: absolute;
+          top: 400px;
+          left: 70px;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+        }
+        #endGameGoldCounter {
+          background-color: aqua;
+          position: absolute;
+          top: 400px;
+          left: 100px;
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+          font-size: 20px; 
+        }
+        #lostGameGoldCounter {
+          background-color: aqua;
+          position: absolute;
+          top: 400px;
+          left: 100px;
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+          font-size: 20px; 
+        }
+
+        #endGameDiamondDisplay {
+          position: absolute;
+          top: 400px;
+          left: 70px;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+        }
+        #endGameDiamondCounter {
+          background-color: rgb(43, 255, 0);
+          position: absolute;
+          top: 400px;
+          left: 100px;
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+          font-size: 20px; 
+        }
+
+        #endGameLivesDisplay {
+          position: absolute;
+          top: 350px;
+          left: 70px;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+        }
+        #endGameLivesCounter {
+          background-color: rgb(243, 9, 106);
+          position: absolute;
+          top: 350px;
+          left: 100px;
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+          font-size: 20px; 
+        }
+        #lostGameLivesCounter {
+          background-color: rgb(243, 9, 106);
+          position: absolute;
+          top: 350px;
+          left: 100px;
+          width: 300px;
+          height: 40px;
+          display: inline-block;
+          text-align: left;
+          font-size: 20px; 
+        }
+
+/* gameover styling. */
+
+#endGameGoldDisplay {
+  position: absolute;
+  top: 400px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameGoldCounter {
+  background-color: aqua;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+#lostGameGoldCounter {
+  background-color: aqua;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#endGameDiamondDisplay {
+  position: absolute;
+  top: 440px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameDiamondCounter {
+  background-color: rgb(43, 255, 0);
+  position: absolute;
+  top: 440px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#endGameLivesDisplay {
+  position: absolute;
+  top: 350px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameLivesCounter {
+  background-color: rgb(243, 9, 106);
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+#lostGameLivesCounter {
+  background-color: rgb(243, 9, 106);
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+
+
+
+/* gameover styling ends. */
+
 
 /* Shows loot when player wins the round. */
 #lootContainer {

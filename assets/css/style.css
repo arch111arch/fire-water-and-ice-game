@@ -294,7 +294,7 @@ text-decoration: underline;
 
   }
 
-  .heart {
+  .playerLife {
     background-image: url(/assets/images/heart.png);
     background-size: 40px 40px;
     width: 40px;
@@ -303,7 +303,7 @@ text-decoration: underline;
 
   }
 
-  .playerLife {
+  .heart {
     background-image: url(/assets/images/heart.png);
     background-size: 40px 40px;
     width: 40px;
@@ -340,6 +340,15 @@ text-decoration: underline;
   }
 
   .playerGold {
+    background-image: url(/assets/images/goldcoin.png);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+  }
+
+  .gold {
     background-image: url(/assets/images/goldcoin.png);
     background-size: 40px 40px;
     width: 40px;
@@ -599,9 +608,158 @@ text-decoration: underline;
           
         }
 
+/* Styling for endGame elements. */
 
+#endGameGoldDisplay {
+  position: absolute;
+  top: 400px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameGoldCounter {
+  background-color: aqua;
+  position: absolute;
+  top: 400px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
 
+#endGameDiamondDisplay {
+  position: absolute;
+  top: 450px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameDiamondCounter {
+  background-color: rgb(43, 255, 0);
+  position: absolute;
+  top: 450px;
+  left: 110px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
 
+#endGameVictoryDisplay {
+  position: absolute;
+  top: 500px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameVictoryCounter {
+  background-color: rgb(238, 255, 0);
+  position: absolute;
+  top: 500px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+#endGameTotalScore {
+  background-color: rgb(69, 47, 104);
+  position: absolute;
+  top: 570px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#endGameLivesDisplay {
+  position: absolute;
+  top: 350px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameLivesCounter {
+  background-color: rgb(243, 9, 106);
+  position: absolute;
+  top: 350px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+/* Styling for looseGame elements */
+
+#looseGameGoldDisplay {
+  position: absolute;
+  top: 400px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameGoldCounter {
+  background-color: aqua;
+  position: absolute;
+  top: 400px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#looseGameDiamondDisplay {
+  position: absolute;
+  top: 450px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameDiamondCounter {
+  background-color: rgb(43, 255, 0);
+  position: absolute;
+  top: 450px;
+  left: 110px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
+
+#looseGameTotalScore {
+  background-color: rgb(69, 47, 104);
+  position: absolute;
+  top: 570px;
+  left: 110px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px; 
+}
 
 .portrait {
     background-color: rgb(133, 245, 4);
@@ -610,7 +768,6 @@ text-decoration: underline;
     width: 300px;
     height: 450px;
     margin-top: 10px;
-    
 
 }
 
@@ -865,184 +1022,6 @@ background: transparent;
   
   z-index: 30;
 }
-
-#endGameGoldDisplay {
-          position: absolute;
-          top: 400px;
-          left: 70px;
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-        }
-        #endGameGoldCounter {
-          background-color: aqua;
-          position: absolute;
-          top: 400px;
-          left: 100px;
-          width: 300px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-          font-size: 20px; 
-        }
-        #lostGameGoldCounter {
-          background-color: aqua;
-          position: absolute;
-          top: 400px;
-          left: 100px;
-          width: 300px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-          font-size: 20px; 
-        }
-
-        #endGameDiamondDisplay {
-          position: absolute;
-          top: 400px;
-          left: 70px;
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-        }
-        #endGameDiamondCounter {
-          background-color: rgb(43, 255, 0);
-          position: absolute;
-          top: 400px;
-          left: 100px;
-          width: 300px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-          font-size: 20px; 
-        }
-
-        #endGameLivesDisplay {
-          position: absolute;
-          top: 350px;
-          left: 70px;
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-        }
-        #endGameLivesCounter {
-          background-color: rgb(243, 9, 106);
-          position: absolute;
-          top: 350px;
-          left: 100px;
-          width: 300px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-          font-size: 20px; 
-        }
-        #lostGameLivesCounter {
-          background-color: rgb(243, 9, 106);
-          position: absolute;
-          top: 350px;
-          left: 100px;
-          width: 300px;
-          height: 40px;
-          display: inline-block;
-          text-align: left;
-          font-size: 20px; 
-        }
-
-/* gameover styling. */
-
-#endGameGoldDisplay {
-  position: absolute;
-  top: 400px;
-  left: 70px;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-}
-#endGameGoldCounter {
-  background-color: aqua;
-  position: absolute;
-  top: 400px;
-  left: 100px;
-  width: 300px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-  font-size: 20px; 
-}
-#lostGameGoldCounter {
-  background-color: aqua;
-  position: absolute;
-  top: 400px;
-  left: 100px;
-  width: 300px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-  font-size: 20px; 
-}
-
-#endGameDiamondDisplay {
-  position: absolute;
-  top: 440px;
-  left: 70px;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-}
-#endGameDiamondCounter {
-  background-color: rgb(43, 255, 0);
-  position: absolute;
-  top: 440px;
-  left: 100px;
-  width: 300px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-  font-size: 20px; 
-}
-
-#endGameLivesDisplay {
-  position: absolute;
-  top: 350px;
-  left: 70px;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-}
-#endGameLivesCounter {
-  background-color: rgb(243, 9, 106);
-  position: absolute;
-  top: 350px;
-  left: 100px;
-  width: 300px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-  font-size: 20px; 
-}
-#lostGameLivesCounter {
-  background-color: rgb(243, 9, 106);
-  position: absolute;
-  top: 350px;
-  left: 100px;
-  width: 300px;
-  height: 40px;
-  display: inline-block;
-  text-align: left;
-  font-size: 20px; 
-}
-
-
-
-
-/* gameover styling ends. */
-
 
 /* Shows loot when player wins the round. */
 #lootContainer {

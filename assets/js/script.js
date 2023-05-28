@@ -356,6 +356,7 @@ function hide2() {
 
 
 function reveal3() {
+  score();
   let roundOver = document.getElementById("playerWonTheGame");
   roundOver.style.display= "inline-block";
   
@@ -368,6 +369,7 @@ function hide3() {
 }
 
 function reveal4() {
+  score();
   let roundOver = document.getElementById("playerLostTheGame");
   roundOver.style.display= "inline-block";
   
@@ -410,7 +412,8 @@ function gameOver() {
 console.log("Player lost the game!");
 let gameOverMsg = "You are defeated. Play again? ";
     document.getElementById("roundResult").innerHTML = gameOverMsg;
-    score();
+    victory = false;
+    // score();
     reveal4();
     playerLives =4;
 computerLives =4;
@@ -428,7 +431,7 @@ console.log("Victory! You won the game!");
 let gameWonMsg = "You won the game! Play again?";
     document.getElementById("roundResult").innerHTML = gameWonMsg;
     victory = true;
-score();
+// score();
 reveal3();
 playerLives =4;
 computerLives =4;
@@ -451,21 +454,63 @@ let livesBonus = playerLives * 100;
 let computerDefeated = 1000;
 let goldBonus = gold * 10;
 let diamondBonus = diamond * 200;
+let baseScore = playerTotalScore;
+
+playerTotalScore += livesBonus;
+playerTotalScore += goldBonus;
+playerTotalScore += diamondBonus;
   
 if(victory === true){
 playerTotalScore += computerDefeated;
 
 }
-playerTotalScore += livesBonus;
-playerTotalScore += goldBonus;
-playerTotalScore += diamondBonus;
+
+
+// Writes score to the gameover screen
+
+// player won
+
+let endGameGoldString = '<h3>' + gold + "x10 " + " = Gold Bonus: "   + goldBonus + '</h3>';
+document.getElementById("endGameGoldCounter").innerHTML = endGameGoldString;
+
+let endGameDiamondString = '<h3>' + diamond + "x200 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
+document.getElementById("endGameDiamondCounter").innerHTML = endGameDiamondString;
+
+let endGameLivesString = '<h3>' + playerLives + "x100 " + " = Lives Bonus: "   + livesBonus + '</h3>';
+document.getElementById("endGameLivesCounter").innerHTML = endGameLivesString;
+
+let endGameVictoryString = '<h3>' + "Victory Bonus: "   + computerDefeated + '</h3>';
+document.getElementById("endGameVictoryCounter").innerHTML = endGameVictoryString;
+
+let endGameTotalScoreString = '<h3>' + "Your Total Score: " + playerTotalScore + '</h3>';
+document.getElementById("endGameTotalScore").innerHTML = endGameTotalScoreString;
+
+// computer won
+
+ let looseGameGoldString = '<h3>' + gold + "x10 " + " = Gold Bonus: "   + goldBonus + '</h3>';
+document.getElementById("looseGameGoldCounter").innerHTML = looseGameGoldString;
+
+ let looseGameDiamondString = '<h3>' + diamond + "x200 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
+document.getElementById("looseGameDiamondCounter").innerHTML = looseGameDiamondString;
+
+let looseGameTotalScoreString = '<h3>' + "Your Total Score: " + playerTotalScore + '</h3>';
+document.getElementById("looseGameTotalScore").innerHTML = looseGameTotalScoreString;
+
+// let looseGameLivesString = '<h3>' + playerLives + "x100 " + " = Lives Bonus: "   + livesBonus + '</h3>';
+// document.getElementById("looseGameLivesCounter").innerHTML = looseGameLivesString;
+
+// let looseGameVictoryString = '<h3>' + "Victory Bonus: "   + computerDefeated + '</h3>';
+// document.getElementById("looseGameVictoryCounter").innerHTML = looseGameVictoryString;
+
+
+//end
+
 
 if(playerTotalScore > highScore){
   highScore = playerTotalScore;
   let highscoreString = '<h3>' + "HIGHSCORE: " + highScore + '</h3>';
   document.getElementById("highscoreArea").innerHTML = highscoreString;
 }
-
 
 
 victory = false;
@@ -480,6 +525,7 @@ document.getElementById("computerTotalScore").innerHTML = resetComputerTotalStri
 document.getElementById("playerTotalScore").innerHTML = resetPlayerTotalString;
 
 }
+
 
 // Creates 4 lives after the game has ended.
 function restoreComputerLives() {

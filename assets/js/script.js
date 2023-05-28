@@ -592,6 +592,8 @@ lootResult = Math.floor(Math.random()  * 7 );
 let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
 let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" height=\"70px\">";
+let shieldLoot = "<img src=\"/assets/images/shield.png\" width=\"70px\" height=\"70px\">";
+let diamondLoot = "<img src=\"/assets/images/diamond.png\" width=\"70px\" height=\"70px\">";
   
   if(lootResult == 0){
     gold += 1;
@@ -613,6 +615,8 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
       
     diamond +=1;
     console.log("You found a Diamond!");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Diamond!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = diamondLoot;
     document.getElementById("playerDiamondCounter").innerHTML = '<h2>' + diamond + '</h2>';
     // console.log("You found no loot.");
     // document.getElementById("lootContainer").innerHTML = '';
@@ -652,6 +656,7 @@ let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" 
   shieldWrapper.appendChild(lootShield);
 
   console.log("You got the Shield");
+  document.getElementById("lootContainer").innerHTML = shieldLoot;
     document.getElementById("lootArea").innerHTML = '<h3>' + "You got the Shield!" + '</h3>';
 }
 else if (shield === true){

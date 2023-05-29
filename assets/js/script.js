@@ -803,3 +803,41 @@ console.log("Player loose 1 life.");
 
 
 }
+
+function buyLife(){
+
+  if(gold>99){
+    extraLife();
+    gold -= 100;
+    let goldTotal = gold;
+    
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+  }
+
+}
+
+function buyShield(){
+
+if(gold>24){
+  if (shield === false){
+    let shieldWrapper = document.getElementById("shieldDisplay");
+    let lootShield = document.createElement('div');
+    shield = true;
+  
+    lootShield.className = "playerShield";
+    lootShield.value = "playerShield";
+    shieldWrapper.appendChild(lootShield);
+  
+    console.log("You bought a Shield");
+   
+
+    
+    gold -= 25;
+    let goldTotal = gold;
+    
+    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+}
+
+}
+
+}

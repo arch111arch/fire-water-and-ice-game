@@ -611,7 +611,7 @@ function lootGenerator (){
   
 let lootArea = document.getElementById("lootArea");
   
-lootResult = Math.floor(Math.random()  * 10 );
+lootResult = Math.floor(Math.random()  * 12 );
 
 let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
@@ -684,8 +684,9 @@ let diamondLoot = "<img src=\"/assets/images/diamond.png\" width=\"70px\" height
     document.getElementById("lootArea").innerHTML = '<h3>' + "You got the Shield!" + '</h3>';
 }
 else if (shield === true){
-  console.log("You allready have the shield.");
-  document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+   console.log("You allready have the shield.");
+  // document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+  lootGenerator();
 }
 
 }else if(lootResult == 7){
@@ -709,6 +710,33 @@ else if (shield === true){
   document.getElementById("lootContainer").innerHTML = lifePotionLoot;
   document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
   extraLife();
+
+}else if(lootResult == 10) {
+  console.log("ExtraLife");
+  document.getElementById("lootContainer").innerHTML = lifePotionLoot;
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
+  extraLife();
+
+}else if(lootResult == 11) {
+  
+  if (shield === false){
+  let shieldWrapper = document.getElementById("shieldDisplay");
+  let lootShield = document.createElement('div');
+  shield = true;
+
+  lootShield.className = "playerShield";
+  lootShield.value = "playerShield";
+  shieldWrapper.appendChild(lootShield);
+
+  console.log("You got the Shield");
+  document.getElementById("lootContainer").innerHTML = shieldLoot;
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You got the Shield!" + '</h3>';
+}
+else if (shield === true){
+   console.log("You allready have the shield.");
+  // document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
+  lootGenerator();
+}
 
 }
 

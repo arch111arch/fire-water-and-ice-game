@@ -99,7 +99,7 @@ function computerChoice (){
 //  let compChoice =0;
 let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
   
-  compChoice = Math.floor(Math.random()  * 3 );
+  compChoice = Math.floor(Math.random()  * 6   );
   console.log(compChoice);
   
   if(compChoice == 0){
@@ -140,16 +140,40 @@ let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
 
     // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
-  }
+   }else if(compChoice == 3) {
+    compChoice = "rock";
+    //console.log(compChoice);
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "fireChoice";
+    computerChoice.value="fireChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+    
+    
+  }else if(compChoice == 4){
+    compChoice = "paper";
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "waterChoice";
+    computerChoice.value="waterChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+
+  }else if(compChoice == 5) {
+    compChoice = "scissors";
+    let computerChoice = document.createElement('div');
+    computerChoice.className= "iceChoice";
+    computerChoice.value="iceChoice";
+    
+    computerChoiceWrapper.innerHTML = ''; 
+    computerChoiceWrapper.appendChild(computerChoice);
+
+   }
+
+
 }
 
-// function getWinner() {
-//   let joj = plChoice;
-//   let coc = compChoice;
-  
-//   console.log(joj + coc);
-  
-// }
 let msg;
 
 function winner (){
@@ -587,7 +611,7 @@ function lootGenerator (){
   
 let lootArea = document.getElementById("lootArea");
   
-lootResult = Math.floor(Math.random()  * 7 );
+lootResult = Math.floor(Math.random()  * 10 );
 
 let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
@@ -637,11 +661,11 @@ let diamondLoot = "<img src=\"/assets/images/diamond.png\" width=\"70px\" height
     extraLife();
 
   }else if(lootResult == 5) {
-    gold += 1;
+    gold += 100;
     let goldTotal = gold;
-    console.log("You found 10 gold.");
-    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Gold Coin!" + '</h3>';
-    document.getElementById("lootContainer").innerHTML = goldLoot;
+    console.log("You found 100 gold.");
+    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+    document.getElementById("lootContainer").innerHTML = bagOfGoldLoot;
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
 }else if(lootResult == 6) {
@@ -664,8 +688,35 @@ else if (shield === true){
   document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
 }
 
+}else if(lootResult == 7){
+      
+  diamond +=1;
+  console.log("You found a Diamond!");
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Diamond!" + '</h3>';
+  document.getElementById("lootContainer").innerHTML = diamondLoot;
+  document.getElementById("playerDiamondCounter").innerHTML = '<h2>' + diamond + '</h2>';
+
+}else if(lootResult == 8) {
+  gold += 100;
+  let goldTotal = gold;
+  console.log("You found 100 gold.");
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+  document.getElementById("lootContainer").innerHTML = bagOfGoldLoot;
+  document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+
+}else if(lootResult == 9) {
+  console.log("ExtraLife");
+  document.getElementById("lootContainer").innerHTML = lifePotionLoot;
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
+  extraLife();
+
 }
+
+
 }
+
+// LootGenerator end
+
 // If player has got a Shield, and the computer winds the Round, the Life is saved and the shild is erased. Otherwise Player loose 1 Life.
 function shieldSaver() {
   let shieldSaveWrapper = document.getElementById("shieldDisplay");

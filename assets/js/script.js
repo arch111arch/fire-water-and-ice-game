@@ -453,7 +453,7 @@ function score(){
 let livesBonus = playerLives * 100;
 let computerDefeated = 1000;
 let goldBonus = gold * 10;
-let diamondBonus = diamond * 200;
+let diamondBonus = diamond * 1000;
 let baseScore = playerTotalScore;
 
 playerTotalScore += livesBonus;
@@ -473,7 +473,7 @@ playerTotalScore += computerDefeated;
 let endGameGoldString = '<h3>' + gold + "x10 " + " = Gold Bonus: "   + goldBonus + '</h3>';
 document.getElementById("endGameGoldCounter").innerHTML = endGameGoldString;
 
-let endGameDiamondString = '<h3>' + diamond + "x200 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
+let endGameDiamondString = '<h3>' + diamond + "x1000 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
 document.getElementById("endGameDiamondCounter").innerHTML = endGameDiamondString;
 
 let endGameLivesString = '<h3>' + playerLives + "x100 " + " = Lives Bonus: "   + livesBonus + '</h3>';
@@ -490,7 +490,7 @@ document.getElementById("endGameTotalScore").innerHTML = endGameTotalScoreString
  let looseGameGoldString = '<h3>' + gold + "x10 " + " = Gold Bonus: "   + goldBonus + '</h3>';
 document.getElementById("looseGameGoldCounter").innerHTML = looseGameGoldString;
 
- let looseGameDiamondString = '<h3>' + diamond + "x200 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
+ let looseGameDiamondString = '<h3>' + diamond + "x1000 " + " = Diamond Bonus: "   + diamondBonus + '</h3>';
 document.getElementById("looseGameDiamondCounter").innerHTML = looseGameDiamondString;
 
 let looseGameTotalScoreString = '<h3>' + "Your Total Score: " + playerTotalScore + '</h3>';

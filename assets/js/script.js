@@ -405,8 +405,17 @@ function hide4() {
   
 }
 
+//Shop
+function openShop(){
+  
+  let enterShop = document.getElementById('shop');
+  enterShop.style.display= 'inline-block';
+}
 
-
+function closeShop() {
+  let exitShop = document.getElementById('shop');
+  exitShop.style.display= 'none';
+}
 
 function computerLooseLife() {
 

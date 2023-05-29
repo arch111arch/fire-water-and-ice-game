@@ -12,6 +12,35 @@
 </head>
 <body>
 
+
+    <!-- Shop begins here -->
+
+    <div id="shop" class="box">
+        <!-- <center>
+        <h3>The Shop</h3>
+        </center> -->
+      
+      <div id="shopLife">
+      <div class="shopHeart" onclick="buyLife()"></div>
+      </div>
+      <div id="shopLifePrice">
+        <p>.....100 Gold</p>
+    </div>
+      
+          <div id="shopShield">
+      <div class="shopShield" onclick="buyShield()"></div>
+      </div>
+      <div id="shopShieldPrice">
+        <p>.......50 Gold</p>
+
+        </div>
+      
+             <div id="closeBtn" class="box" onclick="closeShop()">
+               <p>close</p>
+             </div>
+      
+      </div>
+<!-- Shop ends here -->
     
     <!-- Pupup when Computer or player winds a round. -->
     <div id="computerWonRound" onclick="hide()">
@@ -206,6 +235,13 @@
 
 
     <div id="cardArea">
+
+<!-- Button to open the shop. -->
+ <div class="box" id="shopBtn" onclick="openShop()">
+              <p>SHOP</p>
+            </div>
+           
+
         <div id="roundContainer">
    
         <div class="box"  id="computerCard">

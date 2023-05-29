@@ -750,8 +750,9 @@ function shieldSaver() {
   let shieldSaveWrapper = document.getElementById("shieldDisplay");
 
   if (shield === false){
-    document.getElementById("looseArea").innerHTML = '<h3>' + "You Lose One Life." + '</h3>';
-playerLooseLife();
+    lifeSteal();
+//     document.getElementById("looseArea").innerHTML = '<h3>' + "You Lose One Life." + '</h3>';
+// playerLooseLife();
 
   }else if (shield === true){
     document.getElementById("looseArea").innerHTML = '<h3>' + "The Shield Protected you!" + '</h3>';
@@ -761,4 +762,35 @@ playerLooseLife();
    console.log("player Lives : " + playerLives);
 
   }
+}
+
+function lifeSteal(){
+
+let steal =0;
+let computerWrapper = document.getElementById("computerLivesDisplay");
+
+steal = Math.floor(Math.random()  * 2   );
+  
+  
+  if(steal == 0){
+    let heart = document.createElement('div');
+    heart.className= "computerLife";
+    heart.value="computerLife";
+    computerWrapper.appendChild(heart);
+    computerLives +=1;
+    document.getElementById("looseArea").innerHTML = '<h3>' + "Computer steal One Life!" + '</h3>';
+    console.log("Computer steals a life.");
+    playerLooseLife();
+
+    
+  }else if(steal == 1){
+    document.getElementById("looseArea").innerHTML = '<h3>' + "You Lose One Life." + '</h3>';
+playerLooseLife();
+console.log("Player loose 1 life.");
+    
+  
+
+  }
+
+
 }

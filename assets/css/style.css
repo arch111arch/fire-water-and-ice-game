@@ -504,7 +504,7 @@ text-decoration: underline;
         padding-bottom: 0%;
         width: 100px;
         height: 100px;
-        transition-timing-function: ease-in-out;
+
          
         }
       
@@ -738,7 +738,7 @@ text-decoration: underline;
   text-align: left;
 }
 #endGameGoldCounter {
-  background-color: aqua;
+  /* background-color: aqua; */
   position: absolute;
   top: 400px;
   left: 110px;
@@ -759,7 +759,7 @@ text-decoration: underline;
   text-align: left;
 }
 #endGameDiamondCounter {
-  background-color: rgb(43, 255, 0);
+  /* background-color: rgb(43, 255, 0); */
   position: absolute;
   top: 450px;
   left: 110px;
@@ -780,7 +780,7 @@ text-decoration: underline;
   text-align: left;
 }
 #endGameVictoryCounter {
-  background-color: rgb(238, 255, 0);
+  /* background-color: rgb(238, 255, 0); */
   position: absolute;
   top: 500px;
   left: 110px;
@@ -791,7 +791,7 @@ text-decoration: underline;
   font-size: 18px; 
 }
 #endGameTotalScore {
-  background-color: rgb(69, 47, 104);
+  /* background-color: rgb(69, 47, 104); */
   position: absolute;
   top: 570px;
   left: 110px;
@@ -812,7 +812,7 @@ text-decoration: underline;
   text-align: left;
 }
 #endGameLivesCounter {
-  background-color: rgb(243, 9, 106);
+  /* background-color: rgb(243, 9, 106); */
   position: absolute;
   top: 350px;
   left: 110px;
@@ -835,7 +835,7 @@ text-decoration: underline;
   text-align: left;
 }
 #looseGameGoldCounter {
-  background-color: aqua;
+  /* background-color: aqua; */
   position: absolute;
   top: 400px;
   left: 110px;
@@ -843,7 +843,7 @@ text-decoration: underline;
   height: 40px;
   display: inline-block;
   text-align: left;
-  font-size: 20px; 
+  font-size: 18px; 
 }
 
 #looseGameDiamondDisplay {
@@ -856,7 +856,7 @@ text-decoration: underline;
   text-align: left;
 }
 #looseGameDiamondCounter {
-  background-color: rgb(43, 255, 0);
+  /* background-color: rgb(43, 255, 0); */
   position: absolute;
   top: 450px;
   left: 110px;
@@ -864,11 +864,11 @@ text-decoration: underline;
   height: 40px;
   display: inline-block;
   text-align: left;
-  font-size: 20px; 
+  font-size: 18px; 
 }
 
 #looseGameTotalScore {
-  background-color: rgb(69, 47, 104);
+  /* background-color: rgb(69, 47, 104); */
   position: absolute;
   top: 570px;
   left: 110px;

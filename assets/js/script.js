@@ -99,7 +99,7 @@ function computerChoice (){
 //  let compChoice =0;
 let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
   
-  compChoice = Math.floor(Math.random()  * 6   );
+  compChoice = Math.floor(Math.random()  * 3   );
   console.log(compChoice);
   
   if(compChoice == 0){
@@ -124,7 +124,6 @@ let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
     computerChoiceWrapper.innerHTML = ''; 
     computerChoiceWrapper.appendChild(computerChoice);
 
-
     // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/water_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
 
   }else if(compChoice == 2) {
@@ -136,42 +135,9 @@ let computerChoiceWrapper = document.getElementById("computerChoiceDisplay");
     computerChoiceWrapper.innerHTML = ''; 
     computerChoiceWrapper.appendChild(computerChoice);
 
-
-
     // document.getElementById("computerChoiceDisplay").innerHTML = "<img src=\"/assets/images/ice_krita.png\" width=\"90px\" height=\"90px\" border=\"2px\">";
     //console.log(compChoice);
-   }else if(compChoice == 3) {
-    compChoice = "rock";
-    //console.log(compChoice);
-    let computerChoice = document.createElement('div');
-    computerChoice.className= "fireChoice";
-    computerChoice.value="fireChoice";
-    
-    computerChoiceWrapper.innerHTML = ''; 
-    computerChoiceWrapper.appendChild(computerChoice);
-    
-    
-  }else if(compChoice == 4){
-    compChoice = "paper";
-    let computerChoice = document.createElement('div');
-    computerChoice.className= "waterChoice";
-    computerChoice.value="waterChoice";
-    
-    computerChoiceWrapper.innerHTML = ''; 
-    computerChoiceWrapper.appendChild(computerChoice);
-
-  }else if(compChoice == 5) {
-    compChoice = "scissors";
-    let computerChoice = document.createElement('div');
-    computerChoice.className= "iceChoice";
-    computerChoice.value="iceChoice";
-    
-    computerChoiceWrapper.innerHTML = ''; 
-    computerChoiceWrapper.appendChild(computerChoice);
-
    }
-
-
 }
 
 let msg;
@@ -620,21 +586,20 @@ function lootGenerator (){
   
 let lootArea = document.getElementById("lootArea");
   
-lootResult = Math.floor(Math.random()  * 12 );
+lootResult = Math.floor(Math.random()  * 10 );
 
-let goldLoot = "<img src=\"/assets/images/goldcoin.png\" width=\"70px\" height=\"70px\">";
 let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
 let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" height=\"70px\">";
 let shieldLoot = "<img src=\"/assets/images/shield.png\" width=\"70px\" height=\"70px\">";
 let diamondLoot = "<img src=\"/assets/images/diamond.png\" width=\"70px\" height=\"70px\">";
   
   if(lootResult == 0){
-    gold += 1;
-    let goldTotal = gold;
-    console.log("You found 10 gold.");
-    document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Gold Coin!" + '</h3>';
-    document.getElementById("lootContainer").innerHTML = goldLoot;
-    document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+    gold += 100;
+  let goldTotal = gold;
+  console.log("You found 100 gold.");
+  document.getElementById("lootArea").innerHTML = '<h3>' + "You found a Bag of Gold!" + '</h3>';
+  document.getElementById("lootContainer").innerHTML = bagOfGoldLoot;
+  document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
 
   }else if(lootResult == 1) {
     gold += 100;
@@ -719,36 +684,7 @@ else if (shield === true){
   document.getElementById("lootContainer").innerHTML = lifePotionLoot;
   document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
   extraLife();
-
-}else if(lootResult == 10) {
-  console.log("ExtraLife");
-  document.getElementById("lootContainer").innerHTML = lifePotionLoot;
-  document.getElementById("lootArea").innerHTML = '<h3>' + "You got a Life-potion!" + '</h3>';
-  extraLife();
-
-}else if(lootResult == 11) {
-  
-  if (shield === false){
-  let shieldWrapper = document.getElementById("shieldDisplay");
-  let lootShield = document.createElement('div');
-  shield = true;
-
-  lootShield.className = "playerShield";
-  lootShield.value = "playerShield";
-  shieldWrapper.appendChild(lootShield);
-
-  console.log("You got the Shield");
-  document.getElementById("lootContainer").innerHTML = shieldLoot;
-    document.getElementById("lootArea").innerHTML = '<h3>' + "You got the Shield!" + '</h3>';
 }
-else if (shield === true){
-   console.log("You allready have the shield.");
-  // document.getElementById("lootArea").innerHTML = '<h3>' + "You found No loot." + '</h3>';
-  lootGenerator();
-}
-
-}
-
 
 }
 

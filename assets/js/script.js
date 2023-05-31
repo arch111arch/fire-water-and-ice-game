@@ -1,5 +1,3 @@
-
-
 //document.getElementById("demo").innerHTML = "dfg";
 let plChoice;
 let computerScore =0;
@@ -777,3 +775,6 @@ if(gold>24){
 }
 
 }
+
+
+

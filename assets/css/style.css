@@ -1879,4 +1879,157 @@ background: transparent;
 
 }
 
+/* Styling for endGame elements. */
+
+#endGameGoldDisplay {
+  position: absolute;
+  top: 340px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameGoldCounter {
+/*  background-color: aqua; */
+  position: absolute;
+  top: 340px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameDiamondDisplay {
+  position: absolute;
+  top: 380px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameDiamondCounter {
+/*  background-color: rgb(43, 255, 0);*/
+  position: absolute;
+  top: 380px;
+  left: 75px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameVictoryDisplay {
+  position: absolute;
+  top: 420px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameVictoryCounter {
+/*  background-color: rgb(238, 255, 0);*/
+  position: absolute;
+  top: 420px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+#endGameTotalScore {
+/*  background-color: rgb(69, 47, 104);*/
+  position: absolute;
+  top: 460px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameLivesDisplay {
+  position: absolute;
+  top: 300px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameLivesCounter {
+/*  background-color: rgb(243, 9, 106);*/
+  position: absolute;
+  top: 300px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+/* Styling for looseGame elements */
+
+#looseGameGoldDisplay {
+  position: absolute;
+  top: 290px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameGoldCounter {
+/*  background-color: aqua;*/
+  position: absolute;
+  top: 290px;
+  left: 70px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#looseGameDiamondDisplay {
+  position: absolute;
+  top: 340px;
+  left:45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameDiamondCounter {
+/*  background-color: rgb(43, 255, 0);*/
+  position: absolute;
+  top: 340px;
+  left: 70px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#looseGameTotalScore {
+/*  background-color: rgb(69, 47, 104);*/
+  position: absolute;
+  top: 450px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
 }

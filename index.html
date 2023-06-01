@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta content="rock paper scissors, game, js, javascript game, webgame, fantasy theme, fire water and ice, gabriel pettersson">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Fire, Water & Ice Game</title>
 </head>
 <body>
@@ -101,19 +102,6 @@
             </div>
             <div id="endGameTotalScore"><h3>Total Score: </h3></div>
         
-                   <!-- <div class="heart"></div>
-                   
-                   
-                   <div id="highScoreLife">asd</div>
-                
-                <div class="diamond"></div><div id="highScoreDiamond">asd</div>
-                
-                <div id="victoryBonus"><h3>Victory Bonus: </h3>
-                </div> -->
-
-
-
-
             </div>
     
         </div>
@@ -140,21 +128,6 @@
                 </div>
                 <div id="looseGameTotalScore"><h3>Total Score: </h3></div>
 
-                    
-            
-                       <!-- <div class="heart"></div>
-                       
-                       
-                       <div id="highScoreLife">asd</div>
-                    
-                    <div class="diamond"></div><div id="highScoreDiamond">asd</div>
-                    
-                    <div id="victoryBonus"><h3>Victory Bonus: </h3>
-                    </div> -->
-    
-
-
-
                 </div>
         
             </div>
@@ -162,7 +135,7 @@
 
     
     <header class="nav">
-        <div class="logoWrapper">
+        <div class="logoWrapper" aria-label="Logo Fire Water and Ice">
         <ul>
 <li>
     <h1 id="logoFire">FIRE, </h1>
@@ -181,10 +154,10 @@
         <div id="menu">
         <ul>
         <li>
-            <a href="#about"><h3>About</h3></a>
+            <a href="#about" aria-label="About link"><h3>About</h3></a>
         </li>
         <li>
-            <a href="#socials"><h3>Socials</h3></a>
+            <a href="#socials" aria-label="Social links"><h3>Socials</h3></a>
         </li>
 </ul>
             
@@ -195,52 +168,28 @@
     <!-- Here the current game and Highscore is shown. -->
     <div id="scoreContainer">
         <!-- Computers Total score. Updates after each round. -->
-        <div id="computerTotalScore"><h3>Total Score: 0</h3>
+        <div id="computerTotalScore" aria-label="computer total score"><h3>Total Score: 0</h3>
         </div>
         <!-- Highscore after game over. -->
-        <div id="highscoreArea"><h3>HIGHSCORE: 0</h3>
+        <div id="highscoreArea" aria-label="Highscore"><h3>HIGHSCORE: 0</h3>
     </div>
     <!-- Players Total score. Updates after each round. -->
-    <div id="playerTotalScore"><h3>Total Score: 0</h3>
+    <div id="playerTotalScore" aria-label="player total score"><h3>Total Score: 0</h3>
     </div>
 </div>
 
 
 
     <section>
-        <!-- The gameboard area is where the game is played. -->
+        <!-- The gameboard area is where the game is played. Has the blue gradient.-->
 <div class="gameBoard">
-    <!-- <div  class="portrait" id="enemyPortrait"></div>
-    <div id="vs">
-        <h1>VS</h1>
-    </div>
-    <div  class="portrait" id="heroPortrait"></div>
-    <br>
-    <div id="computerScoreDisplay">
-        <h3>00</h3>
-    </div>
-
-    <div id="result">
-        <h3>Round Result</h3>
-        <p>Computer chose Rock. PLayer chose Rock.</p>
-    </div>
-    
-    
-    <div id="playerScoreDisplay">
-        <h3>00</h3>
-    </div>
-    <br>
-    <div id="buttons">3 buttons here</div>-->
-   
-
 
     <div id="cardArea">
 
 <!-- Button to open the shop. -->
- <div class="box" id="shopBtn" onclick="openShop()">
+ <div class="box" id="shopBtn" onclick="openShop()" aria-label="Open the shop button">
               <p>SHOP</p>
-            </div>
-           
+            </div> 
 
         <div id="roundContainer">
    
@@ -318,22 +267,28 @@
     
     </div>
     
+    
     <div id="choiceButtons">
-    <button id="rock" class="button" onclick="playerChoice(rock)"> </button>
-    <button id="paper" class="button" onclick="playerChoice(paper)">
+    <button id="rock" class="button" onclick="playerChoice(rock)" aria-label="Rock button"> </button>
+    <button id="paper" class="button" onclick="playerChoice(paper)" aria-label="Paper button">
     </button>
-    <button id="scissors" class="button" onclick="playerChoice(scissors)">
+    <button id="scissors" class="button" onclick="playerChoice(scissors)" aria-label="Scissors button">
     </button>
       
     </div>
+
+</div>
+<!-- Gameboard ends here -->
 
     </section>
 
     <div>
 
-        <div>
+        
+
+        <div aria-label="About the game">
         <h1 id="about">ABOUT THE GAME</h1>
-        <div class="heroImage"></div>
+        <div class="heroImage" aria-label="Hero Image"></div>
         <p class="about"> 
             The fantasy kingdom of Alduin is threathened by the emerging threat of the Vampire Counts.
             From their dark castle in the east, their forces are
@@ -351,7 +306,7 @@
              <br>
              The Vampire Count is wating for him, and in a shower of magical sparks they clash in Magic Battle of good versus evil.</p>
             
-             <div class="villainImage"></div>
+             <div class="villainImage" aria-label="Villain Image"></div>
              <h3 id="about">HOW TO PLAY</h3>
 
             <p class="about">Fire, Water & Ice is a fantasy-take of the classic game of Rock, Paper & Scissors. Both players choose one of three Choices and hope that their choice will beat the opponents choice.
@@ -433,7 +388,7 @@
         <div class="footer">
             <ul>
             <li>
-                <a href="mailto:blendersociety@gmail.com" aria-label="Mail link"><h3>Contact us</h3></a>
+                <a href="mailto:gabriel.pettersson77@gmail.com" aria-label="Mail link"><h3>Contact</h3></a>
             </li>
             <li>
                 <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page"><i

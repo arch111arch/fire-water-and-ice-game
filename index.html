@@ -12,42 +12,9 @@
     <title>Fire, Water & Ice Game</title>
 </head>
 <body>
-
-
-    <!-- Shop begins here -->
-
-    <div id="shop" class="box">
-        <!-- <center>
-        <h3>The Shop</h3>
-        </center> -->
-      
-      <div id="shopLife">
-      <div class="shopHeart" onclick="buyLife()"></div>
-      </div>
-      <div id="shopLifePrice">
-        <p>.....100 Gold</p>
-    </div>
-      
-          <div id="shopShield">
-      <div class="shopShield" onclick="buyShield()"></div>
-      </div>
-      <div id="shopShieldPrice">
-        <p>.......50 Gold</p>
-
-        </div>
-      
-             <div id="closeBtn" class="box" onclick="closeShop()">
-               <p>close</p>
-             </div>
-      
-      </div>
-<!-- Shop ends here -->
-    
     <!-- Pupup when Computer or player winds a round. -->
     <div id="computerWonRound" onclick="hide()">
-    
     <div id="roundEnd">
-        
         <div id="roundEndContent">
             <h3>Computer Won the Round!</h3>
             <img src="assets/images/computer_smiling.jpg" height="65%" width="65%">
@@ -60,7 +27,6 @@
     <div id="playerWonRound" onclick="hide2()">
     <div id="roundEnd">
 <div id="lootContainer"></div>
-
 
         <div id="roundEndContent">
             <h3>You Won the Round!</h3>
@@ -184,14 +150,48 @@
         <!-- The gameboard area is where the game is played. Has the blue gradient.-->
 <div class="gameBoard">
 
+    <div id="roundContainer">
+
     <div id="cardArea">
 
-<!-- Button to open the shop. -->
- <div class="box" id="shopBtn" onclick="openShop()" aria-label="Open the shop button">
-              <p>SHOP</p>
-            </div> 
 
-        <div id="roundContainer">
+        <div id="cardContainer">
+               
+            <!-- Shop begins here -->
+            
+                <div id="shop" class="box">
+                  
+                
+                <div id="shopLife">
+                <div class="shopHeart" onclick="buyLife()"></div>
+                </div>
+                <div id="shopLifePrice">
+                 <p> .....100 Gold</p>
+                  </div>
+                
+                    <div id="shopShield">
+                <div class="shopShield" onclick="buyShield()"></div>
+                </div>
+                <div id="shopShieldPrice">
+                  <p>.......25 Gold</p>
+                  </div>
+                
+                       <div id="closeBtn" class="box" onclick="closeShop()">
+                         <p>close</p>
+                       </div>
+                
+                </div>
+            
+                         
+                         
+                
+                      
+                        <div class="box" id="shopBtn" onclick="openShop()">
+                          <p>SHOP</p>
+                        </div>
+                       
+                  </div>
+        
    
         <div class="box"  id="computerCard">
          <div class="box" id="cardContainer">
@@ -395,7 +395,7 @@
     <h3>AI Generated Art</h3>
     <div>
       <p>
-    <a href="https://lexica.art/">Lexica.art</a>
+    <a href="https://lexica.art/">Art made with promts @ Lexica.art</a>
       </p>
     </div>
     <h3>Icon Credits</h3>

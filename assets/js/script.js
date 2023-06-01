@@ -26,6 +26,7 @@ function change (){
 }
 
 function playerChoice (x){
+  click();
 
   let buttons = document.getElementsByClassName ("button");
   let playerChoiceWrapper = document.getElementById("playerChoiceDisplay");
@@ -315,6 +316,7 @@ document.getElementById("playerScoreDisplay").innerHTML = playerScoreStr;
 }
 
 function reveal() {
+  looseRoundSound();
   let roundOver = document.getElementById("computerWonRound");
   roundOver.style.display= "inline-block";
   shieldSaver();
@@ -328,6 +330,7 @@ function hide() {
 }
 
 function reveal2() {
+  winRoundSound();
   let roundOver = document.getElementById("playerWonRound");
   roundOver.style.display= "inline-block";
   lootGenerator();
@@ -344,6 +347,7 @@ function hide2() {
 
 
 function reveal3() {
+  victorySound();
   score();
   let roundOver = document.getElementById("playerWonTheGame");
   roundOver.style.display= "inline-block";
@@ -357,6 +361,7 @@ function hide3() {
 }
 
 function reveal4() {
+  defeatSound();
   score();
   let roundOver = document.getElementById("playerLostTheGame");
   roundOver.style.display= "inline-block";
@@ -746,6 +751,7 @@ function buyLife(){
     let goldTotal = gold;
     
     document.getElementById("playerGoldCounter").innerHTML = '<h2>' + goldTotal + '</h2>';
+    buyLifeSound();
   }
 
 }
@@ -761,6 +767,7 @@ if(gold>24){
     lootShield.className = "playerShield";
     lootShield.value = "playerShield";
     shieldWrapper.appendChild(lootShield);
+    buyShieldSound();
   
     console.log("You bought a Shield");
    
@@ -777,4 +784,50 @@ if(gold>24){
 }
 
 
+function buyShieldSound() {
+  var audio = new Audio("/assets/sound/item-equip.mp3");
+  audio.play();
+  audio.volume = 0.2;
+}
 
+function buyLifeSound() {
+  var audio = new Audio("/assets/sound/bonus.mp3");
+  
+  
+  audio.play();
+  audio.volume = 0.2;
+}
+
+function winRoundSound() {
+  var audio = new Audio("/assets/sound/level-complete.mp3");
+  
+  audio.volume = 0.1;
+  audio.play();
+}
+
+function looseRoundSound() {
+  var audio = new Audio("/assets/sound/failure-drum.mp3");
+  
+  audio.volume =0.1;
+  audio.play();
+}
+
+function victorySound() {
+  var audio = new Audio("/assets/sound/success-fanfare.mp3");
+  
+  audio.volume = 0.2;
+  audio.play();
+}
+function defeatSound() {
+  var audio = new Audio("/assets/sound/loose.mp3");
+  
+  audio.volume = 0.1;
+  audio.play();
+}
+
+function click() {
+  var audio = new Audio("/assets/sound/click.mp3");
+  audio.volume = 0.02;
+  
+  audio.play();
+}

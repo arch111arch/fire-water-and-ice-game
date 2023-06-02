@@ -1768,3 +1768,626 @@ background: transparent;
 }
 
 }
+
+@media screen and (max-width: 320px) {
+
+  .logoWrapper {
+    font-size: 10px;
+}
+
+.nav {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding-top: 2px;
+  margin:auto;
+  }
+  
+  #scoreContainer {
+    height: 21px;
+    padding-top: 0;
+    font-size: 9px;
+    padding-top: 0;
+    margin:auto;
+  }
+
+  .box {
+    position: relative;
+    width: 130px;
+      height: 195px;
+      display: inline-block;
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    #vs {
+      display: none;
+      width: 10px;
+      height: 20px;
+      border-radius: 0;
+      text-align: center;
+      vertical-align: text-bottom;
+     padding-bottom: 150px;
+     padding-left: 0px;
+     padding-right: 0px;
+     font-size: 12px;
+      }
+
+    #playerChoiceDisplay {
+      position: absolute;
+      top: 75%;
+      left: 10px;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+    }
+
+    #computerChoiceDisplay {
+      position: absolute;
+      top: 75%;
+      left: 70px;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+    }
+
+    .emptyChoice {
+      background-image: url("../images/empty2_krita.png");
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+    .fireChoice {
+      background-image: url("../images/fire_krita.png");
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+    .waterChoice {
+      background-image: url("../images/water_krita.png");
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+    .iceChoice {
+      background-image: url("../images/ice_krita.png");
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+  .computerLife {
+    background-image: url("../images/heart.png");
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .playerLife {
+    background-image: url("../images/heart.png");
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .playerGold {
+    background-image: url("../images/goldcoin.png");
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .playerDiamond {
+    background-image: url("../images/diamond.png");
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .playerShield {
+    background-image: url("../images/shield.png");
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  #playerGoldDisplay {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 20px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #playerGoldCounter {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 20px;
+    display: inline-block;
+    text-align: left;
+    font-size: 9px; 
+  }
+
+ /* Diamond styling. */
+
+ #playerDiamondDisplay {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+#playerDiamondCounter {
+  position: absolute;
+  top: 33px;
+  right: 9px;
+  width: 20px;
+  display: inline-block;
+  text-align: left;
+  font-size: 9px; 
+}
+
+/* Diamond Styling End. */
+
+  #playerLivesDisplay {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 70px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #computerLivesDisplay {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 70px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #shieldDisplay {
+    position: absolute;
+    top: 70%;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #roundResult{
+    background-image: url("../images/rock1.png");
+  border: 0px none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-top: 25px;
+  margin-bottom: 3px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-size: 195px 60px;
+  width: 195px;
+  height: 25px;
+  text-align: center;
+    vertical-align: text-top;
+    display: inline-block;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 9px;
+  }
+  
+  #computerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 15px;
+      font-size: 18px;
+  }
+  
+  #playerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 15;
+      font-size: 18px;
+  }
+
+  .about {
+    margin: auto;
+    color: white;
+    width:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: fit-content;
+    text-align: justify;
+    font-size: 11px;
+}
+
+
+.aboutHeader{
+  text-align:center;
+  margin-top: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.roundEnd {
+  margin: auto;
+  position:relative;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 260px;
+  height: 460px;
+  display: block;
+background: transparent;
+  background-image: url("../images/bigstone_bg.png");
+  background-size: 270px 460px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.roundEndContent {
+  margin: auto;
+  position:relative;
+  padding-top: 70px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+/* Shows loot when player wins the round. */
+#lootContainer {
+  position: absolute;
+  bottom: 125px;
+  left: 100px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  z-index: 35;
+}
+
+.heroImage {
+  margin: 5px;
+  height: 150px;
+  width: 120px;
+  text-align: center;
+  background-image: url("../images/theprince.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
+      }
+  
+      .villainImage {
+        margin: 5px;
+        height: 150px;
+        width: 120px;
+        text-align: center;
+        background-image: url("../images/thecount.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        float: left;
+            }
+  
+            #aboutChoiceWrapper{
+              width: 100%;
+              text-align: center;
+            margin-left: auto;
+            }
+  
+            .aboutChoices {
+  text-align: center;
+  vertical-align: text-bottom;
+  margin-top: 20px;
+  display: inline-block;
+            }
+
+            .aboutChoicesText {
+              text-align: center;
+              vertical-align: text-bottom;
+              margin-top: 20px;
+              font-size: 10px;
+                        }
+
+                        .aboutFire {
+                          background-image: url("../images/fire_krita.png");
+                          background-size: 25px 25px;
+                          width: 25px;
+                          height: 25px;
+                          display: inline-block;
+                        }
+                    
+                        .aboutWater {
+                          background-image: url("../images/water_krita.png");
+                          background-size: 25px 25px;
+                          width: 25px;
+                          height: 25px;
+                          display: inline-block;
+                        }
+                    
+                        .aboutIce {
+                          background-image: url("../images/ice_krita.png");
+                          background-size: 25px 25px;
+                          width: 25px;
+                          height: 25px;
+                          display: inline-block;
+                        }
+
+                        /* Styling for shop elements --------------------------*/
+
+#shopBtn {
+  display: inline-block;
+  position: absolute;
+  top: -110px;
+  left: 150px;
+  z-index:20;
+  width: 50px;
+  height: 20px;
+  padding: 2px;
+  background-color: rgb(122, 109, 93);
+  border-color: lawngreen;
+  border-style: solid;
+  border-width: 2px;
+}
+#shopBtn p {
+  font-size: 14px;
+}
+
+#closeBtn {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 58px;
+    z-index:20;
+    width: 40px;
+    height: 15px;
+    padding-bottom: 5px;
+    background-color: rgb(94, 84, 72);
+    border-color: rgb(126, 126, 126);
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#closeBtn p {
+  font-size: 12px;
+}
+
+#shop {
+  background-image: url("../images/smallstone_bg.png");
+  background-size:170px 140px;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: -190px;
+  left: 96px;
+  z-index:21;
+  width: 170px;
+  height: 130px;
+  padding: 4px;
+}
+
+#shopLife {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  top: 36px;
+  left: 38px;
+}
+#shopLifePrice {
+  position: absolute;
+  display: inline-block;
+  top: 36px;
+  left: 70px;
+  color: gold;
+}
+#shopLifePrice p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#shopShield {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  top: 62px;
+  left: 40px;
+}
+
+#shopShieldPrice {
+  position: absolute;
+  display: inline-block;
+  top: 68px;
+  left: 70px;
+  color: gold;
+}
+#shopShieldPrice p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Styling for endGame elements. */
+/* Shop items */
+.shopHeart {
+  background-image: url("../images/heart.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.shopShield {
+  background-image: url("../images/shield.png");
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+/* Styling for endGame elements. */
+
+#endGameGoldDisplay {
+  position: absolute;
+  top: 340px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameGoldCounter {
+  position: absolute;
+  top: 340px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameDiamondDisplay {
+  position: absolute;
+  top: 380px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameDiamondCounter {
+  position: absolute;
+  top: 380px;
+  left: 75px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameVictoryDisplay {
+  position: absolute;
+  top: 420px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameVictoryCounter {
+  position: absolute;
+  top: 420px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+#endGameTotalScore {
+  position: absolute;
+  top: 460px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#endGameLivesDisplay {
+  position: absolute;
+  top: 300px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#endGameLivesCounter {
+  position: absolute;
+  top: 300px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+/* Styling for looseGame elements */
+
+#looseGameGoldDisplay {
+  position: absolute;
+  top: 290px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameGoldCounter {
+  position: absolute;
+  top: 290px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#looseGameDiamondDisplay {
+  position: absolute;
+  top: 340px;
+  left:45px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+}
+#looseGameDiamondCounter {
+  position: absolute;
+  top: 340px;
+  left: 75px;
+  width: 310px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+#looseGameTotalScore {
+  position: absolute;
+  top: 450px;
+  left: 75px;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px; 
+}
+
+
+
+}

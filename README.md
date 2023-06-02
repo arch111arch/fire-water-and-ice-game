@@ -1,6 +1,8 @@
-# Rock Paper Scissors
-Rock Paper Scissors is a site where people can play a casual game of rock, paper, scissors against the computer. It is for everyone and everyone wwho has a few minutes to spare on a computer or on a smartphone.
-The goal of the site is to be stylised, easy to use and be responsive.
+# Fire Water & Ice
+Fire Water & Ice is a fantasy version of the classic game Rock Paper & Scissors.People can play a casual game of rock, paper, scissors against the computer to see how many points they can reach before the game is over. It is for everyone who has a few minutes to spare on a computer or on a smartphone.
+
+The goal of the site is to be clearly themed, easy to use and be responsive. It was important to make the site unique to stand out from other Rock, Paper & Scisors style-games by incorporating additional features.
+The gamemechanics should be intuitive and the game should give audiovisual feedback to the user via buttons, popups, text and sound.
 
 ![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
@@ -49,7 +51,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - The validator found that the use of percentage, % is a bad value. However, this practice is not deprecated on images. I did not want to use CSS for these images and opted for percentages instead. It works fine in browsers tested.  [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 

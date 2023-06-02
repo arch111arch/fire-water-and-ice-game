@@ -140,7 +140,7 @@ margin: 20px;
 height: 420px;
 width: 300px;
 text-align: center;
-background-image: url(assets/images/theprince.jpg);
+background-image: url(../theprince.jpg);
 background-repeat: no-repeat;
 background-size: 100%;
 float: right;
@@ -151,7 +151,7 @@ float: right;
       height: 420px;
       width: 300px;
       text-align: center;
-      background-image: url(assets/images/thecount.jpg);
+      background-image: url(../thecount.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
       float: left;
@@ -179,7 +179,7 @@ display: inline-block;
                       }
 
                       .aboutFire {
-                        background-image: url(assets/images/fire_krita.png);
+                        background-image: url(../fire_krita.png);
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -187,7 +187,7 @@ display: inline-block;
                       }
                   
                       .aboutWater {
-                        background-image: url(assets/images/water_krita.png);
+                        background-image: url(../water_krita.png);
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -195,7 +195,7 @@ display: inline-block;
                       }
                   
                       .aboutIce {
-                        background-image: url(assets/images/ice_krita.png);
+                        background-image: url(../ice_krita.png);
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -205,7 +205,7 @@ display: inline-block;
                       /* Styling for the About sections of the game. */
     #playerCard {
         background-color: rgb(24, 245, 4);
-        background-image: url(assets/images/playerportrait.jpg);
+        background-image: url(../playerportrait.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         border-radius: 10px;
@@ -217,7 +217,7 @@ display: inline-block;
     
     #computerCard {
         background-color: rgb(226, 13, 24);
-        background-image: url(assets/images/computerportrait.jpg);
+        background-image: url(../computerportrait.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         border-radius: 10px;
@@ -285,7 +285,7 @@ display: inline-block;
 /* Diamond Styling End. */
 
     .emptyChoice {
-      background-image: url(assets/images/empty2_krita.png);
+      background-image: url(../empty2_krita.png);
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -293,7 +293,7 @@ display: inline-block;
     }
 
     .fireChoice {
-      background-image: url(assets/images/fire_krita.png);
+      background-image: url(../fire_krita.png);
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -301,7 +301,7 @@ display: inline-block;
     }
 
     .waterChoice {
-      background-image: url(assets/images/water_krita.png);
+      background-image: url(../water_krita.png);
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -309,7 +309,7 @@ display: inline-block;
     }
 
     .iceChoice {
-      background-image: url(assets/images/ice_krita.png);
+      background-image: url(../ice_krita.png);
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -340,7 +340,7 @@ display: inline-block;
     }
 
   .computerLife {
-    background-image: url(assets/images/heart.png);
+    background-image: url(../heart.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -348,7 +348,7 @@ display: inline-block;
   }
 
   .playerLife {
-    background-image: url(assets/images/heart.png);
+    background-image: url(../heart.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -356,7 +356,7 @@ display: inline-block;
   }
 
   .heart {
-    background-image: url(assets/images/heart.png);
+    background-image: url(../heart.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -364,7 +364,7 @@ display: inline-block;
   }
 
   .skull {
-    background-image: url(assets/images/skull.png);
+    background-image: url(../skull.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -372,7 +372,7 @@ display: inline-block;
   }
 
   .lifePotion {
-    background-image: url(assets/images/lifepotion.png);
+    background-image: url(../lifepotion.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -380,7 +380,7 @@ display: inline-block;
   }
 
   .playerGoldBag {
-    background-image: url(assets/images/bagofgold.png);
+    background-image: url(../bagofgold.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -388,7 +388,7 @@ display: inline-block;
   }
 
   .playerGold {
-    background-image: url(assets/images/goldcoin.png);
+    background-image: url(../goldcoin.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -396,7 +396,7 @@ display: inline-block;
   }
 
   .gold {
-    background-image: url(assets/images/goldcoin.png);
+    background-image: url(../goldcoin.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -404,7 +404,7 @@ display: inline-block;
   }
 
   .playerDiamond {
-    background-image: url(assets/images/diamond.png);
+    background-image: url(../diamond.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -412,7 +412,7 @@ display: inline-block;
   }
 
   .diamond {
-    background-image: url(assets/images/diamond.png);
+    background-image: url(../diamond.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -420,7 +420,7 @@ display: inline-block;
   }
 
   .playerCrown {
-    background-image: url(assets/images/crown.png);
+    background-image: url(../crown.png);
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -428,7 +428,7 @@ display: inline-block;
   }
 
   .playerShield {
-    background-image: url(assets/images/shield.png);
+    background-image: url(../shield.png);
     background-size: 120px 120px;
     width: 120px;
     height: 120px;
@@ -436,7 +436,7 @@ display: inline-block;
   }
 
   .playerSword {
-    background-image: url(assets/images/sword.png);
+    background-image: url(../sword.png);
     background-size: 70px 70px;
     width: 70px;
     height: 70px;

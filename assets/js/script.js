@@ -785,13 +785,13 @@ if(gold>24){
 
 
 function buyShieldSound() {
-  var audio = new Audio("/assets/sound/item-equip.mp3");
+  var audio = new Audio("assets/sound/item-equip.mp3");
   audio.play();
   audio.volume = 0.2;
 }
 
 function buyLifeSound() {
-  var audio = new Audio("/assets/sound/bonus.mp3");
+  var audio = new Audio("assets/sound/bonus.mp3");
   
   
   audio.play();
@@ -799,34 +799,34 @@ function buyLifeSound() {
 }
 
 function winRoundSound() {
-  var audio = new Audio("/assets/sound/level-complete.mp3");
+  var audio = new Audio("assets/sound/level-complete.mp3");
   
   audio.volume = 0.1;
   audio.play();
 }
 
 function looseRoundSound() {
-  var audio = new Audio("/assets/sound/failure-drum.mp3");
+  var audio = new Audio("assets/sound/failure-drum.mp3");
   
   audio.volume =0.1;
   audio.play();
 }
 
 function victorySound() {
-  var audio = new Audio("/assets/sound/success-fanfare.mp3");
+  var audio = new Audio("assets/sound/success-fanfare.mp3");
   
   audio.volume = 0.2;
   audio.play();
 }
 function defeatSound() {
-  var audio = new Audio("/assets/sound/loose.mp3");
+  var audio = new Audio("assets/sound/loose.mp3");
   
   audio.volume = 0.1;
   audio.play();
 }
 
 function click() {
-  var audio = new Audio("/assets/sound/click.mp3");
+  var audio = new Audio("assets/sound/click.mp3");
   audio.volume = 0.02;
   
   audio.play();

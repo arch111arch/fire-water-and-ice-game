@@ -23,6 +23,7 @@
         </div>
     </div>
     </div>
+
     <div id="playerWonRound" onclick="hide2()">
     <div class="roundEnd">
 <div id="lootContainer"></div>
@@ -39,7 +40,7 @@
         <div class="roundEnd">
             <div class="roundEndContent">
                 <h3>VICTORY!</h3>
-                <img src="assets/images/crown.png" height="65%" width="65%">
+                <img src="assets/images/crown.png" height=65% width=65% alt="crown">
                 
                 <div id="endGameLivesDisplay">
                     <div class="heart"></div>
@@ -61,14 +62,13 @@
             <div id="endGameTotalScore"><h3>Total Score: </h3></div>
             </div>
         </div>
-        </div>
 
         <!-- Popup when the Player has lost the Game. -->
         <div id="playerLostTheGame" onclick="hide4()">
             <div class="roundEnd">
                 <div class="roundEndContent">
                     <h3>DEFEAT!</h3>
-                    <img src="assets/images/skull.png" height="55%" width="55%">
+                    <img src="assets/images/skull.png" height=55% width=55% alt="skull">
                         <div id="looseGameGoldDisplay">
                         <div class="gold"></div>
                     </div>
@@ -81,10 +81,9 @@
                 <div id="looseGameTotalScore"><h3>Total Score: </h3></div>
                 </div>
             </div>
-            </div>
     
     <header class="nav">
-        <div class="logoWrapper" aria-label="Logo Fire Water and Ice">
+        <div class="logoWrapper">
         <ul>
 <li>
     <h1 id="logoFire">FIRE, </h1>
@@ -114,13 +113,13 @@
     <!-- Here the current game and Highscore is shown. -->
     <div id="scoreContainer">
         <!-- Computers Total score. Updates after each round. -->
-        <div id="computerTotalScore" aria-label="computer total score"><h3>Total Score: 0</h3>
+        <div id="computerTotalScore"><h3>Total Score: 0</h3>
         </div>
         <!-- Highscore after game over. -->
-        <div id="highscoreArea" aria-label="Highscore"><h3>HIGHSCORE: 0</h3>
+        <div id="highscoreArea"><h3>HIGHSCORE: 0</h3>
     </div>
     <!-- Players Total score. Updates after each round. -->
-    <div id="playerTotalScore" aria-label="player total score"><h3>Total Score: 0</h3>
+    <div id="playerTotalScore"><h3>Total Score: 0</h3>
     </div>
 </div>
 
@@ -131,7 +130,7 @@
     <div id="roundContainer">
     <div id="cardArea">
 
-        <div id="cardContainer">
+        <div class="cardContainer">
                
             <!-- Shop begins here -->
                 <div id="shop" class="box"> 
@@ -160,7 +159,7 @@
                   <!-- Shop ends here. -->
    
         <div class="box"  id="computerCard">
-         <div class="box" id="cardContainer">
+         <div class="box" class="cardContainer">
            
            <div id="computerChoiceDisplay">
               <div class="emptyChoice"></div>
@@ -177,7 +176,7 @@
            </div>
            <!-- Player card begins. -->
            <div class="box"  id="playerCard">
-             <div class="box" id="cardContainer">
+             <div class="box" class="cardContainer">
                <div id="playerLivesDisplay">
                 <div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div><div class="playerLife"></div>
                </div>
@@ -234,9 +233,9 @@
 <!-- Gameboard ends here -->
     </section>
     <div>
-        <div aria-label="About the game">
-        <h1 id="about">ABOUT THE GAME</h1>
-        <div class="heroImage" aria-label="Hero Image"></div>
+        <div>
+        <h1 class="aboutHeader">ABOUT THE GAME</h1>
+        <div class="heroImage"></div>
         <p class="about"> 
             The fantasy kingdom of Alduin is threathened by the emerging threat of the Vampire Counts.
             From their dark castle in the east, their forces are
@@ -254,8 +253,8 @@
              <br>
              The Vampire Count is wating for him, and in a shower of magical sparks they clash in Magic Battle of good versus evil.</p>
             
-             <div class="villainImage" aria-label="Villain Image"></div>
-             <h3 id="about">HOW TO PLAY</h3>
+             <div class="villainImage"></div>
+             <h3 class="aboutHeader">HOW TO PLAY</h3>
 
             <p class="about">Fire, Water & Ice is a fantasy-take of the classic game of Rock, Paper & Scissors. Both players choose one of three Choices and hope that their choice will beat the opponents choice.
             <br>
@@ -278,7 +277,7 @@
         </p>
         </div>
 
-            <h3 id="about">FIRE WATER & ICE</h3>
+            <h3 class="aboutHeader">FIRE WATER & ICE</h3>
 
             <div id="aboutChoiceWrapper">
 
@@ -305,7 +304,7 @@
             In the world of Alduin you fight with Magic. To your disposal you have three Elemetal-powers; Burning Fire, running Water and freezing Ice.
             </p>
     
-            <h3 id="about">THE SHOP</h3>
+            <h3 class="aboutHeader">THE SHOP</h3>
             <p class="about">
             <br>
             If you have found enough Gold, you can open the Shop and buy LifePotions or a Shield. While you can buy as many lives as you can afford, you can only have 1 Shield equipped at a time.
@@ -313,7 +312,7 @@
             <br>
             So if you have found a Shield as a Lootdrop or bought one in a previous Turn, you can not buy a new one. 
             </p>
-            <h3 id="about">LIFEPOTIONS & THE SHIELD</h3>
+            <h3 class="aboutHeader">LIFEPOTIONS & THE SHIELD</h3>
             <p class="about">
             <br>
             When you find a Lifepotion as a Lootdrop or buy one from the Shop, you increase your Lives by 1. There is no limit to how many lives you can have.
@@ -343,9 +342,9 @@
     <h3>Icon Credits</h3>
     <div>
         <a href="https://www.freepik.com/free-vector/cartoon-game-icons-knight-shield-witch-potion_24315601.htm#&position=16&from_view=collections" target="_blank" aria-label="Link to Freepik uplyaks art">
-            <p>Image by upklyak</a> on Freepik
+           on Freepik </a> 
         <br>
-        <a href="https://www.freepik.com/free-vector/game-icons-with-bomb-sword-gold-cup-skull-coins-bag-vector-cartoon-set-signs-gui-rpg-computer-game-diamond-hammer-playing-cards-box-treasure-chest_24417268.htm#&position=4&from_view=collections" target="_blank" aria-label="Link to Freepik uplyaks art">Image by upklyak</a> on Freepik
+        <a href="https://www.freepik.com/free-vector/game-icons-with-bomb-sword-gold-cup-skull-coins-bag-vector-cartoon-set-signs-gui-rpg-computer-game-diamond-hammer-playing-cards-box-treasure-chest_24417268.htm#&position=4&from_view=collections" target="_blank" aria-label="Link to Freepik uplyaks art">Image by upklyak on Freepik</a>
     </p>
     </div>
   </div>

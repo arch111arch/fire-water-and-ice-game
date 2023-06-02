@@ -591,10 +591,10 @@ let lootArea = document.getElementById("lootArea");
   
 lootResult = Math.floor(Math.random()  * 10 );
 
-let bagOfGoldLoot = "<img src=\"/assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
-let lifePotionLoot = "<img src=\"/assets/images/lifepotion.png\" width=\"70px\" height=\"70px\">";
-let shieldLoot = "<img src=\"/assets/images/shield.png\" width=\"70px\" height=\"70px\">";
-let diamondLoot = "<img src=\"/assets/images/diamond.png\" width=\"70px\" height=\"70px\">";
+let bagOfGoldLoot = "<img src=\"assets/images/bagofgold.png\" width=\"70px\" height=\"70px\">";
+let lifePotionLoot = "<img src=\"assets/images/lifepotion.png\" width=\"70px\" height=\"70px\">";
+let shieldLoot = "<img src=\"assets/images/shield.png\" width=\"70px\" height=\"70px\">";
+let diamondLoot = "<img src=\"assets/images/diamond.png\" width=\"70px\" height=\"70px\">";
   
   if(lootResult == 0){
     gold += 100;

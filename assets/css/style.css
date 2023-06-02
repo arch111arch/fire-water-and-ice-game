@@ -140,7 +140,7 @@ margin: 20px;
 height: 420px;
 width: 300px;
 text-align: center;
-background-image: url(../theprince.jpg);
+background-image: url("assets/images/theprince.jpg");
 background-repeat: no-repeat;
 background-size: 100%;
 float: right;
@@ -151,7 +151,7 @@ float: right;
       height: 420px;
       width: 300px;
       text-align: center;
-      background-image: url(../thecount.jpg);
+      background-image: url("assets/images/thecount.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       float: left;
@@ -179,7 +179,7 @@ display: inline-block;
                       }
 
                       .aboutFire {
-                        background-image: url(../fire_krita.png);
+                        background-image: url("assets/images/fire_krita.png");
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -187,7 +187,7 @@ display: inline-block;
                       }
                   
                       .aboutWater {
-                        background-image: url(../water_krita.png);
+                        background-image: url("assets/images/water_krita.png");
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -195,7 +195,7 @@ display: inline-block;
                       }
                   
                       .aboutIce {
-                        background-image: url(../ice_krita.png);
+                        background-image: url("assets/images/ice_krita.png");
                         background-size: 50px 50px;
                         width: 50px;
                         height: 50px;
@@ -205,7 +205,7 @@ display: inline-block;
                       /* Styling for the About sections of the game. */
     #playerCard {
         background-color: rgb(24, 245, 4);
-        background-image: url(../playerportrait.jpg);
+        background-image: url("assets/images/playerportrait.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         border-radius: 10px;
@@ -217,7 +217,7 @@ display: inline-block;
     
     #computerCard {
         background-color: rgb(226, 13, 24);
-        background-image: url(../computerportrait.jpg);
+        background-image: url("assets/images/computerportrait.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         border-radius: 10px;
@@ -285,7 +285,7 @@ display: inline-block;
 /* Diamond Styling End. */
 
     .emptyChoice {
-      background-image: url(../empty2_krita.png);
+      background-image: url("assets/images/empty2_krita.png");
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -293,7 +293,7 @@ display: inline-block;
     }
 
     .fireChoice {
-      background-image: url(../fire_krita.png);
+      background-image: url("assets/images/fire_krita.png");
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -301,7 +301,7 @@ display: inline-block;
     }
 
     .waterChoice {
-      background-image: url(../water_krita.png);
+      background-image: url("assets/images/water_krita.png");
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -309,7 +309,7 @@ display: inline-block;
     }
 
     .iceChoice {
-      background-image: url(../ice_krita.png);
+      background-image: url("assets/images/ice_krita.png");
       background-size: 90px 90px;
       width: 90px;
       height: 90px;
@@ -340,7 +340,7 @@ display: inline-block;
     }
 
   .computerLife {
-    background-image: url(../heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -348,7 +348,7 @@ display: inline-block;
   }
 
   .playerLife {
-    background-image: url(../heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -356,7 +356,7 @@ display: inline-block;
   }
 
   .heart {
-    background-image: url(../heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -364,7 +364,7 @@ display: inline-block;
   }
 
   .skull {
-    background-image: url(../skull.png);
+    background-image: url("assets/images/skull.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -372,7 +372,7 @@ display: inline-block;
   }
 
   .lifePotion {
-    background-image: url(../lifepotion.png);
+    background-image: url("assets/images/lifepotion.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -380,7 +380,7 @@ display: inline-block;
   }
 
   .playerGoldBag {
-    background-image: url(../bagofgold.png);
+    background-image: url("assets/images/bagofgold.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -388,7 +388,7 @@ display: inline-block;
   }
 
   .playerGold {
-    background-image: url(../goldcoin.png);
+    background-image: url("assets/images/goldcoin.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -396,7 +396,7 @@ display: inline-block;
   }
 
   .gold {
-    background-image: url(../goldcoin.png);
+    background-image: url("assets/images/goldcoin.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -404,7 +404,7 @@ display: inline-block;
   }
 
   .playerDiamond {
-    background-image: url(../diamond.png);
+    background-image: url("assets/images/diamond.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -412,7 +412,7 @@ display: inline-block;
   }
 
   .diamond {
-    background-image: url(../diamond.png);
+    background-image: url("assets/images/diamond.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -420,7 +420,7 @@ display: inline-block;
   }
 
   .playerCrown {
-    background-image: url(../crown.png);
+    background-image: url("assets/images/crown.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -428,7 +428,7 @@ display: inline-block;
   }
 
   .playerShield {
-    background-image: url(../shield.png);
+    background-image: url("assets/images/shield.png");
     background-size: 120px 120px;
     width: 120px;
     height: 120px;
@@ -436,7 +436,7 @@ display: inline-block;
   }
 
   .playerSword {
-    background-image: url(../sword.png);
+    background-image: url("assets/images/sword.png");
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
@@ -505,7 +505,7 @@ display: inline-block;
         #rock{
           transition-timing-function: ease-in-out;
           background-color: transparent;
-          background-image: url(assets/images/rock_select.png);
+          background-image: url("assets/images/rock_select.png");
            background-size: 100px 100px;
         border: 2px solid black;
         border-radius: 50%;
@@ -523,7 +523,7 @@ display: inline-block;
         #paper{
           transition-timing-function: ease-in-out;
           background-color: transparent;
-          background-image: url(assets/images/paper_select.png);
+          background-image: url("assets/images/paper_select.png");
            background-size: 100px 100px;
         border: 2px solid black;
         border-radius: 50%;
@@ -541,7 +541,7 @@ display: inline-block;
         #scissors{
           transition-timing-function: ease-in-out;
           background-color: transparent;
-          background-image: url(assets/images/scissors_select.png);
+          background-image: url("assets/images/scissors_select.png");
            background-size: 100px 100px;
         border: 2px solid black;
         border-radius: 50%;
@@ -568,7 +568,7 @@ display: inline-block;
         }
 
         #roundResult{
-          background-image: url(assets/images/rock1.png);
+          background-image: url("assets/images/rock1.png");
         border: 0px none;
         padding-left: 15px;
         padding-right: 15x;
@@ -611,7 +611,7 @@ display: inline-block;
 
         /* Shop items */
   .shopHeart {
-    background-image: url(assets/images/heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 35px 35px;
     width: 35px;
     height: 35px;
@@ -619,7 +619,7 @@ display: inline-block;
 
   }
   .shopShield {
-    background-image: url(assets/images/shield.png);
+    background-image: url("assets/images/shield.png");
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -668,7 +668,7 @@ display: inline-block;
 }
 
 #shop {
-  background-image: url(assets/images/smallstone_bg.png);
+  background-image: url("assets/images/smallstone_bg.png");
   background-size:340px 240px;
   background-repeat: no-repeat;
   display: none;
@@ -878,7 +878,7 @@ display: inline-block;
 
 #enemyPortrait {
     background-color: rgb(226, 13, 24);
-    background-image: url(assets/images/computerportrait.jpg);
+    background-image: url("assets/images/computerportrait.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -889,7 +889,7 @@ display: inline-block;
 
 #heroPortrait {
     background-color: rgb(24, 245, 4);
-    background-image: url(assets/images/playerportrait.jpg);
+    background-image: url("assets/images/playerportrait.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -961,7 +961,7 @@ display: inline-block;
       height: 680px;
       display: block;
 background: transparent;
-      background-image: url(assets/images/bigstone_bg.png);
+      background-image: url("assets/images/bigstone_bg.png");
       background-size: 485px 700px;
       background-repeat: no-repeat;
       background-position: center;
@@ -1100,7 +1100,7 @@ background: transparent;
     }
 
     .emptyChoice {
-      background-image: url(assets/images/empty2_krita.png);
+      background-image: url("assets/images/empty2_krita.png");
       background-size: 50px 50px;
       width: 50px;
       height: 50px;
@@ -1108,7 +1108,7 @@ background: transparent;
     }
 
     .fireChoice {
-      background-image: url(assets/images/fire_krita.png);
+      background-image: url("assets/images/fire_krita.png");
       background-size: 50px 50px;
       width: 50px;
       height: 50px;
@@ -1116,7 +1116,7 @@ background: transparent;
     }
 
     .waterChoice {
-      background-image: url(assets/images/water_krita.png);
+      background-image: url("assets/images/water_krita.png");
       background-size: 50px 50px;
       width: 50px;
       height: 50px;
@@ -1124,7 +1124,7 @@ background: transparent;
     }
 
     .iceChoice {
-      background-image: url(assets/images/ice_krita.png);
+      background-image: url("assets/images/ice_krita.png");
       background-size: 50px 50px;
       width: 50px;
       height: 50px;
@@ -1132,7 +1132,7 @@ background: transparent;
     }
 
   .computerLife {
-    background-image: url(assets/images/heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -1140,7 +1140,7 @@ background: transparent;
   }
 
   .playerLife {
-    background-image: url(assets/images/heart.png);
+    background-image: url("assets/images/heart.png");
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -1148,7 +1148,7 @@ background: transparent;
   }
 
   .playerGold {
-    background-image: url(assets/images/goldcoin.png);
+    background-image: url("assets/images/goldcoin.png");
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -1156,7 +1156,7 @@ background: transparent;
   }
 
   .playerDiamond {
-    background-image: url(assets/images/diamond.png);
+    background-image: url("assets/images/diamond.png");
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -1164,7 +1164,7 @@ background: transparent;
   }
 
   .playerShield {
-    background-image: url(assets/images/shield.png);
+    background-image: url("assets/images/shield.png");
     background-size: 60px 60px;
     width: 60px;
     height: 60px;
@@ -1242,7 +1242,7 @@ background: transparent;
   }
 
   #roundResult{
-    background-image: url(assets/images/rock1.png);
+    background-image: url("assets/images/rock1.png");
   border: 0px none;
   padding-left: 0px;
   padding-right: 0px;
@@ -1304,7 +1304,7 @@ background: transparent;
   height: 540px;
   display: block;
 background: transparent;
-  background-image: url(assets/images/bigstone_bg.png);
+  background-image: url("assets/images/bigstone_bg.png");
   background-size: 350px 560px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1333,7 +1333,7 @@ background: transparent;
 /* Styling for shop elements --------------------------*/
 /* Shop items */
 .shopHeart {
-  background-image: url(assets/images/heart.png);
+  background-image: url("assets/images/heart.png");
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -1341,7 +1341,7 @@ background: transparent;
 }
 
 .shopShield {
-  background-image: url(assets/images/shield.png);
+  background-image: url("assets/images/shield.png");
   background-size: 25px 25px;
   width: 25px;
   height: 25px;
@@ -1389,7 +1389,7 @@ background: transparent;
 }
 
 #shop {
-  background-image: url(assets/images/smallstone_bg.png);
+  background-image: url("assets/images/smallstone_bg.png");
   background-size:170px 140px;
   background-repeat: no-repeat;
   display: none;
@@ -1448,7 +1448,7 @@ background: transparent;
   height: 150px;
   width: 120px;
   text-align: center;
-  background-image: url(assets/images/theprince.jpg);
+  background-image: url("assets/images/theprince.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   float: right;
@@ -1459,7 +1459,7 @@ background: transparent;
         height: 150px;
         width: 120px;
         text-align: center;
-        background-image: url(assets/images/thecount.jpg);
+        background-image: url("assets/images/thecount.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         float: left;
@@ -1486,7 +1486,7 @@ background: transparent;
                         }
 
                         .aboutFire {
-                          background-image: url(assets/images/fire_krita.png);
+                          background-image: url("assets/images/fire_krita.png");
                           background-size: 25px 25px;
                           width: 25px;
                           height: 25px;
@@ -1494,7 +1494,7 @@ background: transparent;
                         }
                     
                         .aboutWater {
-                          background-image: url(assets/images/water_krita.png);
+                          background-image: url("assets/images/water_krita.png");
                           background-size: 25px 25px;
                           width: 25px;
                           height: 25px;
@@ -1502,7 +1502,7 @@ background: transparent;
                         }
                     
                         .aboutIce {
-                          background-image: url(assets/images/ice_krita.png);
+                          background-image: url("assets/images/ice_krita.png");
                           background-size: 25px 25px;
                           width: 25px;
                           height: 25px;
@@ -1551,7 +1551,7 @@ background: transparent;
 }
 
 #shop {
-  background-image: url(assets/images/smallstone_bg.png);
+  background-image: url("assets/images/smallstone_bg.png");
   background-size:170px 140px;
   background-repeat: no-repeat;
   display: none;
@@ -1608,14 +1608,14 @@ background: transparent;
 /* Styling for endGame elements. */
 /* Shop items */
 .shopHeart {
-  background-image: url(assets/images/heart.png);
+  background-image: url("assets/images/heart.png");
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
   display: inline-block;
 }
 .shopShield {
-  background-image: url(assets/images/shield.png);
+  background-image: url("assets/images/shield.png");
   background-size: 25px 25px;
   width: 25px;
   height: 25px;

@@ -140,7 +140,7 @@ margin: 20px;
 height: 420px;
 width: 300px;
 text-align: center;
-background-image: url("assets/images/theprince.jpg");
+background-image: url("./theprince.jpg");
 background-repeat: no-repeat;
 background-size: 100%;
 float: right;

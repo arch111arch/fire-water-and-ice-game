@@ -1036,7 +1036,192 @@ background: transparent;
 }
 
 
+
+/* --------------------------
+--------------------------
+--------------------------
+Second largest screen size */
+
+
+
+
 @media screen and (max-width: 800px) {
+
+    #vs {
+      display: none;
+      }
+      
+.box {
+    position: relative;
+    width: 300px;
+      height: 450px;
+      display: inline-block;
+      border-radius: 8px;
+    }
+
+    #playerChoiceDisplay {
+      position: absolute;
+      top: 76%;
+      left: 15px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+    }
+
+    #computerChoiceDisplay {
+      position: absolute;
+      top: 76%;
+      left: 195px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+    }
+
+  #roundResult{
+    background-image: url("../images/rock1.png");
+  border: 0px none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-top: 25px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  background-repeat: no-repeat;
+  background-size: 395px 80px;
+  width: 390px;
+  height: 40px;
+  text-align: center;
+    vertical-align: text-top;
+    display: inline-block;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 16px;
+  }
+  
+  #computerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+      font-size: 22px;
+  }
+  
+  #playerScoreDisplay {
+    margin-top: 20px;
+    height: 20px;
+    width: 20;
+      font-size: 22px;
+  }
+
+  .about {
+    margin: auto;
+    color: white;
+    width:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: fit-content;
+    text-align: justify;
+    font-size: 13px;
+}
+
+
+.aboutHeader{
+  text-align:center;
+  margin-top: 25px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.heroImage {
+  margin: 5px;
+  height: 260px;
+  width: 220px;
+  text-align: center;
+  background-image: url("../images/theprince.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
+      }
+  
+      .villainImage {
+        margin: 5px;
+        height: 260px;
+        width: 220px;
+        text-align: center;
+        background-image: url("../images/thecount.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        float: left;
+            }
+  
+            #aboutChoiceWrapper{
+              width: 100%;
+              text-align: center;
+            margin-left: auto;
+            }
+  
+            .aboutChoices {
+  text-align: center;
+  vertical-align: text-bottom;
+  margin-top: 20px;
+  display: inline-block;
+            }
+
+            .aboutChoicesText {
+              text-align: center;
+              vertical-align: text-bottom;
+              margin-top: 20px;
+              font-size: 10px;
+                        }
+
+                        .aboutFire {
+                          background-image: url("../images/fire_krita.png");
+                          background-size: 35px 35px;
+                          width: 35px;
+                          height: 35px;
+                          display: inline-block;
+                        }
+                    
+                        .aboutWater {
+                          background-image: url("../images/water_krita.png");
+                          background-size: 35px 35px;
+                          width: 35px;
+                          height: 35px;
+                          display: inline-block;
+                        }
+                    
+                        .aboutIce {
+                          background-image: url("../images/ice_krita.png");
+                          background-size: 35px 35px;
+                          width: 35px;
+                          height: 35px;
+                          display: inline-block;
+                        }
+
+                        /* Styling for shop elements --------------------------*/
+
+#shopBtn {
+  top: -160px;
+  left: 250px;
+}
+
+#shop {
+  top: -320px;
+  left: 150px;
+}
+
+}
+
+
+
+/* --------------------------
+--------------------------
+--------------------------
+Next smallest screen size */
+
+
+
+
+@media screen and (max-width: 641px) {
 
   .logoWrapper {
     font-size: 16px;
@@ -1658,7 +1843,13 @@ background: transparent;
 }
 
 
-@media screen and (max-width: 320px) {
+
+/* -----------------------------
+-----------------------------
+-----------------------------
+smallest screen size */
+
+@media screen and (max-width: 365px) {
 
   .logoWrapper {
     font-size: 10px;

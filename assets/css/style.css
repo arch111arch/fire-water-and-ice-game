@@ -133,7 +133,8 @@ text-decoration: underline;
       display: inline-block;
       border-radius: 10px;
     }
-    /* Styling for About sections begins here. */
+
+    /* Roundover portraits */
 
     #computerSmiling {
       text-align: center;
@@ -144,9 +145,20 @@ text-decoration: underline;
       width: 320px;
       display: inline-block;
       position: relative;
-      background-color: aqua;
-
     }
+
+    #playerSmiling {
+      text-align: center;
+      background-image: url("/assets/images/player_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 460px;
+      width: 320px;
+      display: inline-block;
+      position: relative;
+    }
+
+ /* Styling for About sections begins here. */
 
     .heroImage {
 margin: 20px;
@@ -1040,8 +1052,8 @@ background: transparent;
 /* Shows loot when player wins the round. */
 #lootContainer {
   position: absolute;
-  bottom: 120px;
-  left: 190px;
+  bottom: 140px;
+  left: 200px;
   width: 100%;
   display: inline-block;
   text-align: left;
@@ -1088,6 +1100,30 @@ Second largest screen size */
       width: 90px;
       height: 90px;
       display: inline-block;
+    }
+
+    /* Roundover portraits */
+
+    #computerSmiling {
+      text-align: center;
+      background-image: url("../images/computer_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 460px;
+      width: 320px;
+      display: inline-block;
+      position: relative;
+    }
+
+    #playerSmiling {
+      text-align: center;
+      background-image: url("/assets/images/player_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 460px;
+      width: 320px;
+      display: inline-block;
+      position: relative;
     }
 
   #roundResult{
@@ -1265,6 +1301,30 @@ Next smallest screen size */
       display: inline-block;
       border-radius: 10px;
       z-index: 1;
+    }
+
+    /* Roundover portraits */
+
+    #computerSmiling {
+      text-align: center;
+      background-image: url("../images/computer_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 340px;
+      width: 225px;
+      display: inline-block;
+      position: relative;
+    }
+
+    #playerSmiling {
+      text-align: center;
+      background-image: url("/assets/images/player_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 340px;
+      width: 225px;
+      display: inline-block;
+      position: relative;
     }
 
     #vs {
@@ -1899,6 +1959,30 @@ smallest screen size */
       display: none;
       }
 
+      #computerSmiling {
+        text-align: center;
+        background-image: url("../images/computer_smiling.jpg");
+        background-repeat: no-repeat;
+        background-size: 200px 300px;
+        height: 280px;
+        width: 220px;
+        display: inline-block;
+        position: relative;
+        left: 7px;
+      }
+  
+      #playerSmiling {
+        text-align: center;
+        background-image: url("/assets/images/player_smiling.jpg");
+        background-repeat: no-repeat;
+        background-size: 200px 300px;
+        height: 280px;
+        width: 220px;
+        display: inline-block;
+        position: relative;
+        left: 7px;
+      }
+
     #playerChoiceDisplay {
       position: absolute;
       top: 75%;
@@ -2168,7 +2252,7 @@ smallest screen size */
 .roundEnd {
   margin: auto;
   position:relative;
-  margin-top: 10px;
+  margin-top: 0px;
   padding-top: 10px;
   text-align: center;
   width: 265px;
@@ -2193,8 +2277,8 @@ background: transparent;
 /* Shows loot when player wins the round. */
 #lootContainer {
   position: absolute;
-  bottom: 125px;
-  left: 100px;
+  bottom: 100px;
+  left: 90px;
   width: 100%;
   display: inline-block;
   text-align: left;

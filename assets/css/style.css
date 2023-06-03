@@ -169,6 +169,17 @@ text-decoration: underline;
       position: relative;
     }
 
+    #defeatSkull {
+      text-align: center;
+      background-image: url("../images/skull.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 460px;
+      width: 320px;
+      display: inline-block;
+      position: relative;
+    }
+
  /* Styling for About sections begins here. */
 
     .heroImage {
@@ -1148,6 +1159,17 @@ Second largest screen size */
       position: relative;
     }
 
+    #defeatSkull {
+      text-align: center;
+      background-image: url("../images/skull.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 440px;
+      width: 300px;
+      display: inline-block;
+      position: relative;
+    }
+
   #roundResult{
     background-image: url("../images/rock1.png");
   border: 0px none;
@@ -1352,6 +1374,17 @@ Next smallest screen size */
     #victoryCrown {
       text-align: center;
       background-image: url("../images/crown.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 340px;
+      width: 200px;
+      display: inline-block;
+      position: relative;
+    }
+
+    #defeatSkull {
+      text-align: center;
+      background-image: url("../images/skull.png");
       background-repeat: no-repeat;
       background-size: 100%;
       height: 340px;
@@ -2060,6 +2093,17 @@ smallest screen size */
       #victoryCrown {
         text-align: center;
         background-image: url("../images/crown.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 300px;
+        width: 160px;
+        display: inline-block;
+        position: relative;
+      }
+
+      #defeatSkull {
+        text-align: center;
+        background-image: url("../images/skull.png");
         background-repeat: no-repeat;
         background-size: 100%;
         height: 300px;

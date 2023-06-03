@@ -149,7 +149,7 @@ text-decoration: underline;
 
     #playerSmiling {
       text-align: center;
-      background-image: url("/assets/images/player_smiling.jpg");
+      background-image: url("../images/player_smiling.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       height: 460px;
@@ -1117,7 +1117,7 @@ Second largest screen size */
 
     #playerSmiling {
       text-align: center;
-      background-image: url("/assets/images/player_smiling.jpg");
+      background-image: url("../images/player_smiling.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       height: 460px;
@@ -1318,7 +1318,7 @@ Next smallest screen size */
 
     #playerSmiling {
       text-align: center;
-      background-image: url("/assets/images/player_smiling.jpg");
+      background-image: url("../images/player_smiling.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       height: 340px;
@@ -1973,7 +1973,7 @@ smallest screen size */
   
       #playerSmiling {
         text-align: center;
-        background-image: url("/assets/images/player_smiling.jpg");
+        background-image: url("../images/player_smiling.jpg");
         background-repeat: no-repeat;
         background-size: 200px 300px;
         height: 280px;

@@ -135,6 +135,19 @@ text-decoration: underline;
     }
     /* Styling for About sections begins here. */
 
+    #computerSmiling {
+      text-align: center;
+      background-image: url("../images/computer_smiling.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 460px;
+      width: 320px;
+      display: inline-block;
+      position: relative;
+      background-color: aqua;
+
+    }
+
     .heroImage {
 margin: 20px;
 height: 420px;

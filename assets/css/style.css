@@ -1913,6 +1913,47 @@ background: transparent;
   font-size: 13px; 
 }
 
+
+.heart {
+  background-image: url("../images/heart.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.lifePotion {
+  background-image: url("../images/lifepotion.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.gold {
+  background-image: url("../images/goldcoin.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.diamond {
+  background-image: url("../images/diamond.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.playerCrown {
+  background-image: url("../images/crown.png");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
 }
 
 

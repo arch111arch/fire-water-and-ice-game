@@ -1395,15 +1395,6 @@ Next smallest screen size */
 
     #vs {
       display: none;
-      width: 10px;
-      height: 20px;
-      border-radius: 0;
-      text-align: center;
-      vertical-align: text-bottom;
-     padding-bottom: 150px;
-     padding-left: 0px;
-     padding-right: 0px;
-     font-size: 12px;
       }
 
     #playerChoiceDisplay {
@@ -1577,7 +1568,7 @@ Next smallest screen size */
   margin-top: 3px;
   background-repeat: no-repeat;
   background-size: 255px 70px;
-  width: 250px;
+  width: 260px;
   height: 30px;
   text-align: center;
     vertical-align: text-top;

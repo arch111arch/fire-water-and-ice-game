@@ -129,7 +129,7 @@ In both cases the Gameboard and all score and loot will be reset and the player 
 The features, functions and buttons as well as sounds were tested and iterated several times. Some functions and classes were re-written in order to make all elements work for a responsive design.
 Others were scrapped.
 
-An example of a function that needed testing and rework was the Shop and Lifesteal. In order to permit Lifesteal, the code was made into its own function that had its own conditions. On top of that, if the pleyr had a shiled, the Lifesteal would not work, so that needed to be adressed.
+An example of a function that needed testing and rework was the Shop and Lifesteal. In order to permit Lifesteal, the code was made into its own function that had its own conditions. On top of that, if the player had a shiled, the Lifesteal would not work, so that needed to be adressed.
 
 The shield could only be bought and found if the player did not have one. So a check was done to make sure a player can never buy 2 shields. The buttons in the Shop had to only work when needed, and when a player won a Round and found Loot, the Loot-generator would only ever give a shield if the player did not have one.
 All this led to some trial end error.

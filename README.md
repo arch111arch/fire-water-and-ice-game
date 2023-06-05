@@ -126,7 +126,7 @@ In both cases the Gameboard and all score and loot will be reset and the player 
 
 ## Testing 
 
-The features, functions and buttons as well as sounds were tested and iterated over several days. Some functions and classes were re-written in order to make all elements work for a resposive design.
+The features, functions and buttons as well as sounds were tested and iterated several times. Some functions and classes were re-written in order to make all elements work for a responsive design.
 Others were scrapped.
 
 An example of a function that needed testing and rework was the Shop and Lifesteal. In order to permit Lifesteal, the code was made into its own function that had its own conditions. On top of that, if the pleyr had a shiled, the Lifesteal would not work, so that needed to be adressed.

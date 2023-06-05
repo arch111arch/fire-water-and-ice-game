@@ -105,6 +105,16 @@ In both cases the Gameboard and all score and loot will be reset and the player 
 
 ![socials](/fwi_socials.PNG)
 
+### Button feedback
+- To give visual feedback: 
+ - The choicebuttons are animated to scale up slightly when the mouse hovers over them.
+ - When a choicebutton is clicked, it scales down to indicate it is being pressed.
+
+### Sound Design
+- Sounds were added give feedback when the player presses one of the choice-buttons.
+- Distinctly different sounds play when a player wins or looses a Round.
+- Distinctly different sounds play when a game is Lost, and when a game is Won.
+- The shop has a sound for Lifepotion and a sound for the Shield.
 
 ### Features Left to Implement
 
@@ -151,7 +161,7 @@ The live link can be found here - https://arch111arch.github.io/fire-water-and-i
 ## Credits 
 
 - The site www.w3schools.com was a very good source for inspiration and help with many topics. [WC3 Schools]https://www.w3schools.com/
-- Several solutions came about by doing the excercises in Code Institute.
+- Several solutions came about by doing the excercises on Code Institute.
 - Inspiration came from a large number of forum-threads and articles, but no code was copied, only used as a way to solve a problem along the way.
 
 ### Content 

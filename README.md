@@ -4,7 +4,7 @@ Fire Water & Ice is a fantasy version of the classic game Rock Paper & Scissors.
 The goal of the site is to be clearly themed, easy to use and be responsive. It was important to make the site unique to stand out from other Rock, Paper & Scisors style-games by incorporating additional features.
 The gamemechanics should be intuitive and the game should give audiovisual feedback to the user via buttons, popups, text and sound.
 
-(https://github.com/arch111arch/fire-water-and-ice-game/amiresponsive_screen.PNG)
+(https://github.com/arch111arch/fire-water-and-ice-game/main/amiresponsive_screen.PNG)
 
 
 

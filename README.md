@@ -1,11 +1,21 @@
 # Fire Water & Ice
-Fire Water & Ice is a fantasy version of the classic game Rock Paper & Scissors.People can play a casual game of rock, paper, scissors against the computer to see how many points they can reach before the game is over. It is for everyone who has a few minutes to spare on a computer or on a smartphone.
+Fire Water & Ice is a fantasy version of the classic game Rock Paper & Scissors. People can play a casual game of rock, paper, scissors against the computer to see how many points they can reach before the game is over. It is for everyone who has a few minutes to spare on a computer or on a smartphone.
 
-The goal of the site is to be clearly themed, easy to use and be responsive. It was important to make the site unique to stand out from other Rock, Paper & Scisors style-games by incorporating additional features.
+The goal of the site is to be clearly themed, easy to use and to be fully responsive. It was important to make the site unique to stand out from other Rock, Paper & Scissors style-games by incorporating additional features.
 The gamemechanics should be intuitive and the game should give audiovisual feedback to the user via buttons, popups, text and sound.
 
-(https://github.com/arch111arch/fire-water-and-ice-game/main/amiresponsive_screen.PNG)
+![Fire, Water & Ice Am I responsive screenshot](/amiresponsive_screen.PNG)
 
+## Design Philosophy
+
+The site is centered around good vs evil and has a clear Fantasy-theme running throughout. The main colors are the three elemental powers used represented by Yellow/Red = Fire, Blue = Water and White = Ice.
+This is mirrored in the Logo wich has each word in the correspodning color.
+
+![The Logo of the site](/fwi_logo_menu.PNG)
+
+- Icons all have a distinct medeval look to them as well as the stone-backgrounds used for all important areas during the game.
+- The portraits of the player and computer are AI-generated with the desired outcome to be like a fantasy card-game.
+- The soundeffects were chosen to be short and not too modern or elaborate to avoid being irritating over time.
 
 
 ## Features 
@@ -14,22 +24,40 @@ The gamemechanics should be intuitive and the game should give audiovisual feedb
 
 - __Navigation Bar__
 
-  - The navigaition is simple and to the point. It is resposive and easy for the user to understand.
-  - Because this is such a small page, it has no need for a HOME-button.. 
+  - The navigaition is simple and to the point. It is resposive and easy for the user to understand. Since this is about the game itself, the About section and Socils were all that was needed.
 
 
 - __The Game Board__
 
-  - The styling is a fantasy setting with two opposing portraits, one for the player and one for the computer. 
-  - Points, choices and result are all clearly laid out and defined. 
+ - The styling is a fantasy setting with two opposing cards, one for the player and one for the computer. 
+ - Each player is color-coded. Red for the computer, Green for the player.
+ - The total Score as well as the current Highscore is allways visible just above the cardarea.
+ - Each card shows the number of Lives for each player.
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![The GameBoard](/fwi_screenshot1.PNG) 
+
+ - The human player has icons for Gold, Diamonds and a Shield, when equipped.
+ - Each card has a fixed location that mirrors what the computer and player chooses each Turn of the game.
+ 
+#### Rock, Paper & Scissors
+
+![The Logo of the site](/fwi_choices.PNG)
+- The player makes a choice by clicking on on the the three orbs.
+- The result of who won the Turn is displayed in the middle of the screen. The Score for the Turn is visible as a large number just below each card.
+- When a player has won 3 Turns, he wins that Round. Depending on who won, a popup appears with inforative text.
+- Then the next Round begins when the player clicks the screen.
+![The player won the Round](/fwi_playerwon.PNG)![The computer won the Round](/fwi_compwon.PNG)
+
+#### The Loot System
+Each Round the player will get loot from a random list. This can be a life, gold, a diamond o a shield. The item is added to the players inventory and visible in the card.
+If the player allready has a Shild, the generator rolls again.
+The computer has a 50% chance of Lifesteal when it wins. If that happens, the player loosses 1 life and the computer gains 1 life.
+
+
 
 - __The Footer__ 
 
-  - The footer contains a mail-link and relevant links to social media that opens up i a new tab. 
-
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+ - The footer contains a mail-link and relevant links to social media that opens up i a new tab. 
 
 - __The About Section__
 
@@ -38,6 +66,8 @@ The gamemechanics should be intuitive and the game should give audiovisual feedb
 ### Features Left to Implement
 
 - Various computer opponents and a permanent Leaderboard.
+- Being able to play against a human opponent.
+- More loot and more powers/abilities.
 
 ## Testing 
 

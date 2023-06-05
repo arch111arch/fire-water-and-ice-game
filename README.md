@@ -102,6 +102,7 @@ In both cases the Gameboard and all score and loot will be reset and the player 
 - __The Footer__ 
 
  - The footer has en email-link and social media links that opens up in a new tab. 
+
 ![socials](/fwi_socials.PNG)
 
 
@@ -138,27 +139,29 @@ One thing the wc3-validator did not like was the use of % for images in the HTML
 As far as I am aware, there are no bugs in the code. 
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
+![Deploy to GitHub Pages](/deploy.PNG)
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - In the GitHub repository, click Settings.
+  - Click General from the menu to the left.
+  - Then as Source, choose main branch.
+  - Once the branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
-
+The live link can be found here - https://arch111arch.github.io/fire-water-and-ice-game/
 
 ## Credits 
 
-- The site www.w3schools.com was a very good source for inspiration and help with many topics. https://www.w3schools.com/
+- The site www.w3schools.com was a very good source for inspiration and help with many topics. [WC3 Schools]https://www.w3schools.com/
 - Several solutions came about by doing the excercises in Code Institute.
-- Inspiration came from a large numer of forum-threads and articles, but no code was copied, only used as a way to solve a problem along the way.
+- Inspiration came from a large number of forum-threads and articles, but no code was copied, only used as a way to solve a problem along the way.
 
 ### Content 
 
 - The images used for social media comes from font awesome. [Font Awesome](https://fontawesome.com/)
+
 ### Media
 
 - The portraits used were generated on the AI-site Lexica.art. [Lexica AI ART](https://lexica.art/)
 - The Icons used are from the site Freepik by the artist upklyak. [Freepik assets](https://www.freepik.com/free-vector/game-icons-with-bomb-sword-gold-cup-skull-coins-bag-vector-cartoon-set-signs-gui-rpg-computer-game-diamond-hammer-playing-cards-box-treasure-chest_24417268.htm#&position=4&from_view=collections)
+- The sounds used were found at Pixabay. [Pixabay royaltyfree assets](https://pixabay.com/sound-effects/)
+
+

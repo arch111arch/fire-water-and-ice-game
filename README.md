@@ -12,7 +12,10 @@ The gamemechanics should be intuitive and the game should give audiovisual feedb
 The site is centered around good vs evil and has a clear Fantasy-theme running throughout. The main colors are the three elemental powers used represented by Yellow/Red = Fire, Blue = Water and White = Ice.
 This is mirrored in the Logo wich has each word in the correspodning color.
 
-The screen is covered with wither a transparent green or red at the end of each Round and at the end of the game to further give feedback to the player.
+The screen is covered with wither a transparent green or red at the end of each Round and at the end of the game to give direct visual feedback. The colors instantly lets the player know if he wins or looses.
+
+It was key that the site was fully responsive. To acheive this, every important area, icon and text was scaled and positioned to share a near identical look ragardless of screen-size.
+In order to be adaptive, each element has a class that can be easily altered in each @media-bracket. This took time, but was absolutely vital to the functionality of the gameloop.
 
 ![The Logo of the site](/fwi_logo_menu.PNG)
 
@@ -27,7 +30,7 @@ The screen is covered with wither a transparent green or red at the end of each 
 
 - __Navigation Bar__
 
-  - The navigaition is simple and to the point. It is resposive and easy for the user to understand. Since this is about the game itself, the About section and Socils were all that was needed.
+  - The navigaition is simple and to the point. It is resposive and easy for the user to understand. Since this is about the game itself, the About section and Socials were all that was needed.
 
 
 - __The Game Board__
@@ -39,34 +42,36 @@ The screen is covered with wither a transparent green or red at the end of each 
 
 ![The GameBoard](/fwi_screenshot1.PNG) 
 
-  - The human player has icons for Gold, Diamonds and a Shield, when equipped.
+  - The human player has icons for Gold, Diamonds and a Shield. Both gold and diamond is followed by a number that shows the current amount the player has.
   - Each card has an orb at the bottom. They mirror what the computer and player chooses each Turn of the game. These are greyed out at the start of each Turn. 
  
 #### Rock, Paper & Scissors
 
 ![The Logo of the site](/fwi_choices.PNG)
+
 - The player makes a choice by clicking on on the the three orbs.
   - The result of who won the Turn is displayed in the middle of the screen. The Score for the Turn is visible as a large number just below each card.
-- When a player has won 3 Turns, he wins that Round. Depending on who won, a popup appears with inforative text.
+- When a player has won 3 Turns, he wins that Round. Depending on who won, a popup appears with informative text.
   - Then the next Round begins when the player clicks the screen.
-  - 
+
 ![The player won the Round](/fwi_playerwon.PNG)![The computer won the Round](/fwi_compwon.PNG)
 
 #### The Loot System
 
 Each Round the player will get loot from a random list. This can be a life, gold, a diamond o a shield. The item is added to the players inventory and visible in the card.
 If the player allready has a Shield, the generator rolls again.
+
 The computer has a 50% chance of Lifesteal when it wins. If that happens, the player loosses 1 life and the computer gains 1 life.
 
-However, if the player has a Shield equipped and the player wind the Round, that life is saved and the Shield is disscarded.
+However, if the player has a Shield equipped when the computer wins the Round, that life is saved and the Shield is discarded.
 
 #### The Shop
 
-By clicking the shop-button at any time during play, the player opens the Shop-window. 
+By clicking the green-bordered shop-button at any time during play, the player opens the Shop-window. 
 ![The Shop](/fwi_shop.PNG)
 
-Here the player can buy a Lifepotion to get an extra-life or a Shield, given he do not allready have one, by clicking on the icon.
-They can only be bought if sufficient gold has been found as a loot-drop.
+Here the player can buy a Lifepotion to get more lives or a Shield, given he do not allready have one, by clicking on the icon.
+Items in the shop can only be bought if sufficient gold has been found as a loot-drop.
 
 #### The rules of the Game
 As a game of chance, winning is based on Luck. Choose one of the 3 choices and hope for the best.
@@ -80,7 +85,7 @@ He will score based on how much gold and diamonds he found before the end.
 
 ![defeat screen](/fwi_defeat.PNG)
 
-However, to really beat the game and end up on the Highscore, the pleyer needs to win. When the computer lost all lives, the Victoryscreen will pop up.
+However, to really beat the game and end up on the Highscore, the player needs to win the game. When the computer lost all lives, the Victoryscreen will pop up.
 Here the final score sums up remaining lives, gold, diamonds, basescore and a Victory Bonus.
 If the new score is higher that the previous Highsore, it will replace it as the new Highscore.
 
@@ -88,14 +93,17 @@ If the new score is higher that the previous Highsore, it will replace it as the
 
 In both cases the Gameboard and all score and loot will be reset and the player will be asked to play again.
 
-- __The Footer__ 
-
- - The footer contains a mail-link and relevant links to social media that opens up i a new tab. 
-![socials](/fwi_socials.PNG)
-
 - __The About Section__
 
-  - This contains a short introduction to the game Rock, Paper, Scissors and how it i played. 
+  - A short backstory sets the mood for the game as a duel between good and evil.
+  - The rules and objective of the game is presented in detail.
+  - The features of the Shop and the Loot-system are allso explained here. 
+
+- __The Footer__ 
+
+ - The footer has en email-link and social media links that opens up in a new tab. 
+![socials](/fwi_socials.PNG)
+
 
 ### Features Left to Implement
 
@@ -105,25 +113,29 @@ In both cases the Gameboard and all score and loot will be reset and the player 
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+The features, functions and buttons as well as sounds were tested and iterated over several days. Some functions and classes were re-written in order to make all elements work for a resposive design.
+Others were scrapped.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+An example of a function that needed testing and rework was the Shop and Lifesteal. In order to permit Lifesteal, the code was made into its own function that had its own conditions. On top of that, if the pleyr had a shiled, the Lifesteal would not work, so that needed to be adressed.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+The shield could only be bought and found if the player did not have one. So a check was done to make sure a player can never buy 2 shields. The buttons in the Shop had to only work when needed, and when a player won a Round and found Loot, the Loot-generator would only ever give a shield if the player did not have one.
+All this led to some trial end error.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+The site is tested on several screens both in the inspector and on a PC, phone and a tablet to make sure everything flowed the same regardless of device.
+
+One thing the wc3-validator did not like was the use of % for images in the HTML. The code allways worked in every browser , but to be safe rather than sorry, those images were instead styled with CSS and that removed the issue.
 
 
 ### Validator Testing 
 
 - HTML
-  - The validator found that the use of percentage, % is a bad value. However, this practice is not deprecated on images. I did not want to use CSS for these images and opted for percentages instead. It works fine in browsers tested.  [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - The validator found no errors.  [WC3 HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Farch111arch.github.io%2Ffire-water-and-ice-game%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farch111arch.github.io%2Ffire-water-and-ice-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+As far as I am aware, there are no bugs in the code. 
 
 ## Deployment
 
@@ -140,11 +152,13 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 ## Credits 
 
 - The site www.w3schools.com was a very good source for inspiration and help with many topics. https://www.w3schools.com/
+- Several solutions came about by doing the excercises in Code Institute.
+- Inspiration came from a large numer of forum-threads and articles, but no code was copied, only used as a way to solve a problem along the way.
 
 ### Content 
 
 - The images used for social media comes from font awesome. [Font Awesome](https://fontawesome.com/)
-
 ### Media
 
-- The images are AI-generated.
+- The portraits used were generated on the AI-site Lexica.art. [Lexica AI ART](https://lexica.art/)
+- The Icons used are from the site Freepik by the artist upklyak. [Freepik assets](https://www.freepik.com/free-vector/game-icons-with-bomb-sword-gold-cup-skull-coins-bag-vector-cartoon-set-signs-gui-rpg-computer-game-diamond-hammer-playing-cards-box-treasure-chest_24417268.htm#&position=4&from_view=collections)

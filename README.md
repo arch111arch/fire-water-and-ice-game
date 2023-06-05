@@ -77,17 +77,19 @@ Items in the shop can only be bought if sufficient gold has been found as a loot
 As a game of chance, winning is based on Luck. Choose one of the 3 choices and hope for the best.
 Fire melts Ice. Water puts out fire. Ice freezes water. If players choose the same thing, it´s a draw and they choose again.
 
+When the player clicks a button, the computer chooses one at random and they are compared to determined the winner of that Turn. This is repeated untill the player or the computer has won three times in one Round.
+
 ![rules](/fwi_rules.PNG)
 
 #### Game over
-When the player lost all lives the Defeatscreen will pop up.
-He will score based on how much gold and diamonds he found before the end.
+When the player has lost all his lives, the Defeatscreen will pop up.
+The Total Score is based on how much gold and diamonds he found before the end.
 
 ![defeat screen](/fwi_defeat.PNG)
 
-However, to really beat the game and end up on the Highscore, the player needs to win the game. When the computer lost all lives, the Victoryscreen will pop up.
+However, to really beat the game and end up on the Highscore, the player needs to win the game. When the computer has lost all it´s lives, the Victoryscreen will pop up.
 Here the final score sums up remaining lives, gold, diamonds, basescore and a Victory Bonus.
-If the new score is higher that the previous Highsore, it will replace it as the new Highscore.
+If the new Total Score is higher that the previous Highscore, it will replace it as the new Highscore.
 
 ![victory screen](/fwi_victory.PNG)
 
